@@ -8,5 +8,18 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    transition: 0.3s;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
 }

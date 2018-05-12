@@ -1,3 +1,10 @@
+%section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 // BLOCK
 .big-title-container {
     display: flex;
@@ -21,7 +28,7 @@
     @include responsive(s) {
         font-size: 60px;
     }
-    @include responsive(m){
+    @include responsive(m) {
         font-size: 75px;
     }
     @include responsive(l) {
@@ -32,10 +39,77 @@
     }
 }
 
-// ELEMENT
-// MOD
+#programa {
+    @extend %section;
+    background-color: #eeeeee;
+    @include responsive(s) {}
+    @include responsive(m) {}
+    @include responsive(l) {}
+    @include responsive(xl) {
+        justify-content: space-around;
+        align-content: center;
+        // align-items: center;
+    }
+}
 
+// ELEMENT
+.program__container {
+    text-align: center;
+    @include responsive(s) {}
+    @include responsive(m) {}
+    @include responsive(l) {}
+    @include responsive(xl) {
+        width: 300px;
+        align-self: center;
+    }
+}
+
+.program__icon {
+    font-size: 20vh;
+    @include responsive(s) {}
+    @include responsive(m) {}
+    @include responsive(l) {}
+    @include responsive(xl) {
+        // font-size: 45vh;
+    }
+}
+
+.program__big-title {
+    font-size: 8.2vh;
+    text-align: center;
+    width: 100%;
+    padding: {
+        top: 10px;
+        bottom: 8px;
+    }
+    @include responsive(xl) {
+        text-align: left;
+        width: 100px;
+    }
+}
+
+.program__title {
+    font-size: 8vh;
+    padding: {
+        top: 5px;
+        bottom: 15px;
+    }
+}
+
+.program__description {
+    font-size: 3vh;
+}
+
+// MOD
 .--active {
     background-color: $black;
     color: #fff;
+}
+
+// TEST 
+
+.test {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
 }

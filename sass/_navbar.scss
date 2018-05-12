@@ -7,9 +7,9 @@
     position: fixed;
     top: 0;
     width: 100%;
-    // padding-top: 15px;
+    padding-top: 15px;
     @include responsive(xl) {
-        // padding-top: 20px;
+        padding-top: 20px;
     }
 }
 

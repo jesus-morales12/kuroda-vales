@@ -1,23 +1,3 @@
-$(window).on('scroll', function () {
-    if ($(this).scrollTop() >= $('#programa').position().top) {
-        $('#navbar-programa').addClass('--active')
-    }
-    if ($(this).scrollTop() <= $('#programa').position().top) {
-        $('#navbar-programa').removeClass('--active')
-    }
-    if ($(this).scrollTop() >= $('#requisitos').position().top) {
-        $('#navbar-programa').removeClass('--active')
-        $('#navbar-requisitos').addClass('--active')
-    }
-    if ($(this).scrollTop() <= $('#requisitos').position().top) {
-        $('#navbar-requisitos').removeClass('--active')
-    }
-})
-
-// $('#navbar-programa').click(function () {
-//     $('#navbar-programa').addClass('--active');
-// });
-
 // Select all links with hashes
 $('a[href*="#"]')
     // Remove links that don't actually link to anything

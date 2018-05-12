@@ -8,7 +8,11 @@
   align-content: center;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  padding-top: 15px; }
+  @media only screen and (min-width: 1400px) {
+    .navbar {
+      padding-top: 20px; } }
 
 .navbar__link {
   text-decoration: none;
@@ -50,6 +54,12 @@
   background-position: center;
   background-image: url("http://getwallpapers.com/wallpaper/full/4/d/9/237608.jpg"); }
 
+#programa {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap; }
+
 .big-title-container {
   display: flex;
   width: 275px;
@@ -81,9 +91,50 @@
     .big-title {
       font-size: 95px; } }
 
+#programa {
+  background-color: #eeeeee; }
+  @media only screen and (min-width: 1400px) {
+    #programa {
+      justify-content: space-around;
+      align-content: center; } }
+
+.program__container {
+  text-align: center; }
+  @media only screen and (min-width: 1400px) {
+    .program__container {
+      width: 300px;
+      align-self: center; } }
+
+.program__icon {
+  font-size: 20vh; }
+
+.program__big-title {
+  font-size: 8.2vh;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 8px; }
+  @media only screen and (min-width: 1400px) {
+    .program__big-title {
+      text-align: left;
+      width: 100px; } }
+
+.program__title {
+  font-size: 8vh;
+  padding-top: 5px;
+  padding-bottom: 15px; }
+
+.program__description {
+  font-size: 3vh; }
+
 .--active {
   background-color: #141414;
   color: #fff; }
+
+.test {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px; }
 
 .footer {
   width: 100%;
@@ -133,6 +184,7 @@
 
 .footer__link {
   color: #FFFFFF;
+  text-decoration: none;
   font-weight: lighter;
   font-size: 15px; }
 
@@ -149,7 +201,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-  transition: 0.3s; }
+  font-family: 'Lato', sans-serif; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+.content {
+  flex: 1 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
