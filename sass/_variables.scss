@@ -1,0 +1,57 @@
+/* PALETTE COLORS */
+
+$dark-red: #A11213;
+$red: #EE3233;
+$light-red: #FF4F50;
+$dark-green: #015418;
+$light-green: #02A12E;
+$black: #141414;
+$white: #FFFFFF;
+$violet: #B10A96;
+$light-violet: #CB15AD;
+$yellow: #FED001;
+$light-blue: #1AFEF1;
+$dark-yellow: #B19512;
+$blue: #0101FE;
+$dark-blue: #0000B1;
+/* SOCIAL NETWORK ICON COLORS */
+
+$fb-icon-color: #3b5998;
+$twitter-icon-color: #0084b4;
+$youtube-icon-color: #FF0000;
+$instagram-icon-color: #9b6954;
+/* MEDIA QUERY BREAKPOINTS */
+
+$s: "screen and (min-width: 576px)";
+$m: "screen and (min-width: 768px)";
+$l: "screen and (min-width: 992px)";
+$xl: "screen and (min-width: 1400px)";
+$mobile-landscape: "screen and (min-width: 375px) and (orientation: landscape)";
+
+@mixin responsive($device) {
+    @if $device==s {
+        @media only #{$s} {
+            @content;
+        }
+    }
+    @else if $device==m {
+        @media only #{$m} {
+            @content;
+        }
+    }
+    @else if $device==l {
+        @media only #{$l} {
+            @content;
+        }
+    }
+    @else if $device==xl {
+        @media only #{$xl} {
+            @content;
+        }
+    }
+    @else if $device==mobile-landscape {
+        @media only #{$mobile-landscape} {
+            @content;
+        }
+    }
+}

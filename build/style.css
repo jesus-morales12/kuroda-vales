@@ -1,0 +1,174 @@
+/* PALETTE COLORS */
+/* SOCIAL NETWORK ICON COLORS */
+/* MEDIA QUERY BREAKPOINTS */
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.navbar__link {
+  text-decoration: none;
+  color: #141414;
+  font-size: 15px; }
+  @media only screen and (min-width: 576px) {
+    .navbar__link {
+      font-size: 17px; } }
+  @media only screen and (min-width: 768px) {
+    .navbar__link {
+      font-size: 19px; } }
+  @media only screen and (min-width: 992px) {
+    .navbar__link {
+      font-size: 21px; } }
+  @media only screen and (min-width: 1400px) {
+    .navbar__link {
+      font-size: 24px; } }
+
+.header__bg {
+  background-image: url("../media/bg-1.jpg");
+  width: 100%;
+  height: 92vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media only screen and (min-width: 576px) {
+    .header__bg {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
+
+.test-bg {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("http://getwallpapers.com/wallpaper/full/4/d/9/237608.jpg"); }
+
+.big-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 275px;
+  margin-top: 16vh; }
+  @media only screen and (min-width: 576px) {
+    .big-title-container {
+      width: 450px;
+      margin-left: 100px; } }
+  @media only screen and (min-width: 768px) {
+    .big-title-container {
+      width: 500px; } }
+  @media only screen and (min-width: 1400px) {
+    .big-title-container {
+      width: 650px; } }
+
+.big-title {
+  font-size: 55px;
+  color: #000; }
+  @media only screen and (min-width: 576px) {
+    .big-title {
+      font-size: 60px; } }
+  @media only screen and (min-width: 768px) {
+    .big-title {
+      font-size: 75px; } }
+  @media only screen and (min-width: 992px) {
+    .big-title {
+      font-size: 80px; } }
+  @media only screen and (min-width: 1400px) {
+    .big-title {
+      font-size: 95px; } }
+
+.--active {
+  background-color: #141414;
+  color: #fff; }
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+.copyright {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: 100; }
+  @media only screen and (min-width: 1400px) {
+    .copyright {
+      padding-top: 8px;
+      padding-bottom: 12px;
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+.slogan {
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  font-style: italic;
+  padding: 8px 12px; }
+
+.footer__block {
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 8px; }
+
+.footer__logo {
+  width: 90%; }
+
+.footer__options {
+  list-style-type: none; }
+
+.footer__options > li {
+  padding: 8px 0; }
+
+.footer__link {
+  color: #FFFFFF;
+  font-weight: lighter;
+  font-size: 15px; }
+
+.footer__title {
+  color: #FFFFFF;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 300; }
+
+.footer--theme {
+  background-color: #141414; }
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }

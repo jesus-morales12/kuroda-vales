@@ -1,0 +1,41 @@
+// BLOCK
+.big-title-container {
+    display: flex;
+    width: 275px;
+    margin-top: 16vh;
+    @include responsive(s) {
+        width: 450px;
+        margin-left: 100px;
+    }
+    @include responsive(m) {
+        width: 500px;
+    }
+    @include responsive(xl) {
+        width: 650px;
+    }
+}
+
+.big-title {
+    font-size: 55px;
+    color: #000;
+    @include responsive(s) {
+        font-size: 60px;
+    }
+    @include responsive(m){
+        font-size: 75px;
+    }
+    @include responsive(l) {
+        font-size: 80px;
+    }
+    @include responsive(xl) {
+        font-size: 95px;
+    }
+}
+
+// ELEMENT
+// MOD
+
+.--active {
+    background-color: $black;
+    color: #fff;
+}
