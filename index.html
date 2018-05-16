@@ -88,58 +88,65 @@
             <!-- </div> -->
 
         </div>
-        <div id="requisitos" class="test-bg">
+        <div id="requisitos">
             <h1 class="requirements__big-title">
                 REQUISITOS
             </h1>
         </div>
-        <div id="contacto" class="test-bg-2">
-            <h1 class="contact__big-title" class="test-bg-2">
+        <div id="contacto">
+            <h1 class="contact__big-title">
                 CONTACTO
             </h1>
             <div class="contact__container">
                 <div class="testimonials">
+                    <h2 class="testimonials__title">
+                        <i class="fas fa-chart-line"></i> Historias de éxito </h2>
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="testimonials__box">
                                     <figure>
-                                        <div class="testimonials__pic">
+                                        <div class="testimonials__pic-1">
                                         </div>
                                         <figcaption>
-                                            Nombre de la persona
+                                            Homero J. Simpson
                                         </figcaption>
                                     </figure>
                                     <div class="testimonials__text">
-                                        Aquí va el testimonio por escrito de esta persona. Experiencias, beneficios, contenido que den confianza al lector.
+                                        ¡Los libros son inútiles! Yo leí único libro en mi vida: «Matar un ruiseñor». ¡Y no me dio ninguna información sobre cómo
+                                        matar ruiseñores! Sí, es cierto que me enseñó a no juzgar a un hombre por el color
+                                        de su piel, ¿pero eso para qué me sirve?
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonials__box">
                                     <figure>
-                                        <div class="testimonials__pic">
+                                        <div class="testimonials__pic-2">
                                         </div>
                                         <figcaption>
-                                            Nombre de la persona
+                                            Spider-Man
                                         </figcaption>
                                     </figure>
                                     <div class="testimonials__text">
-                                        Aquí va el testimonio por escrito de esta persona. Experiencias, beneficios, contenido que den confianza al lector.
+                                        Independientemente de lo que me depare esta vida nunca olvidaré estas palabras: un gran poder conlleva una gran responsabilidad.
+                                        Esa es mi virtud y mi maldición. ¿Qué quién soy yo? Soy Spiderman.
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonials__box">
                                     <figure>
-                                        <div class="testimonials__pic">
+                                        <div class="testimonials__pic-3">
                                         </div>
                                         <figcaption>
-                                            Nombre de la persona
+                                            Anton Ego
                                         </figcaption>
                                     </figure>
                                     <div class="testimonials__text">
-                                        Aquí va el testimonio por escrito de esta persona. Experiencias, beneficios, contenido que den confianza al lector.
+                                        En el pasado, jamás oculté mi desdén por el famoso lema del chef Gusteau: ´Cualquiera puede cocinar´. Pero al fin me doy
+                                        cuenta de lo que quiso decir en realidad: ´No cualquiera puede convertirse en un
+                                        gran artista, pero un gran artista puede provenir de cualquier lado´.
                                     </div>
                                 </div>
                             </div>
@@ -149,7 +156,8 @@
                     </div>
                 </div>
                 <div class="contact__book">
-                    Aquí van las formas de contacto para formar parte del programa de vales. Pueden ser teléfonos, correo electrónico, o un formulario de contacto.
+                    Aquí van las formas de contacto para formar parte del programa de vales. Pueden ser teléfonos, correo electrónico, o un formulario
+                    de contacto.
                 </div>
             </div>
         </div>
@@ -258,30 +266,17 @@
     <script>
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
-            spaceBetween: 30,
+            spaceBetween: 20,
+            // autoplay: {
+            //     delay: 5500,
+            //     disableOnInteraction: false,
+            // },
             // init: false,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-            }
-            // breakpoints: {
-            //     1024: {
-            //         slidesPerView: 4,
-            //         spaceBetween: 40,
-            //     },
-            //     768: {
-            //         slidesPerView: 3,
-            //         spaceBetween: 30,
-            //     },
-            //     640: {
-            //         slidesPerView: 2,
-            //         spaceBetween: 20,
-            //     },
-            //     320: {
-            //         slidesPerView: 1,
-            //         spaceBetween: 10,
-            //     }
-            // }
+            },
+            loop: true
         });
     </script>
 </body>

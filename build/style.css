@@ -19,7 +19,7 @@
           align-items: center; }
 
 .swiper-wrapper {
-  padding-bottom: 22px; }
+  padding-bottom: 24px; }
 
 .navbar {
   display: -webkit-box;
@@ -53,6 +53,25 @@
     .navbar__link {
       font-size: 24px; } }
 
+.testimonials__pic-1, .testimonials__pic-2, .testimonials__pic-3 {
+  height: 30vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top; }
+  @media only screen and (min-width: 992px) {
+    .testimonials__pic-1, .testimonials__pic-2, .testimonials__pic-3 {
+      height: 36vh;
+      background-repeat: no-repeat;
+      background-size: cover; } }
+
+.testimonials__pic-1 {
+  background-image: url("http://www.elcomercio.com/files/article_main/uploads/2017/05/12/5916775bc3359.jpeg"); }
+.testimonials__pic-2 {
+  background-image: url("https://i.imgur.com/UgESOEt.png"); }
+.testimonials__pic-3 {
+  background-image: url("http://www.foodrepublic.com/wp-content/uploads/2014/01/antonego.jpg"); }
+
 .header__bg {
   background-image: url("../media/bg-1.jpg");
   width: 100%;
@@ -74,20 +93,9 @@
           -ms-flex-pack: start;
               justify-content: flex-start; } }
 
-.test-bg {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom; }
-
-.test-bg-2 {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom; }
-
 #programa, #requisitos, #contacto {
   width: 100%;
+  text-align: center;
   padding-top: 20px;
   padding-bottom: 30px;
   display: -webkit-box;
@@ -99,7 +107,6 @@
   border: 1px solid rgba(20, 20, 20, 0.5); }
 
 .program__big-title, .requirements__big-title, .contact__big-title {
-  text-align: center;
   width: 100%;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -158,9 +165,13 @@
       -ms-flex-pack: distribute;
           justify-content: space-around; } }
 
-@media only screen and (min-width: 992px) {
-  .testimonials {
-    width: 500px; } }
+.testimonials {
+  padding: 12px;
+  width: 100%; }
+  @media only screen and (min-width: 992px) {
+    .testimonials {
+      width: 800px;
+      padding: 0; } }
 
 .testimonials__box {
   display: -webkit-box;
@@ -175,19 +186,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%; }
+  width: 600px; }
 
-@media only screen and (min-width: 992px) {
-  .testimonials__pic {
-    height: 300px;
-    width: 100%;
-    background-image: url("../media/profile-demo.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; } }
+.testimonials__title {
+  font-size: 4.6vh;
+  padding-bottom: 8px; }
 
 .testimonials__text {
-  padding: 8px 5px; }
+  padding: 8px;
+  font-size: 2.6vh;
+  text-align: justify;
+  font-style: italic; }
 
 figcaption {
   font-size: 22px;
@@ -195,7 +204,6 @@ figcaption {
   padding-top: 5px; }
 
 .program__container {
-  text-align: center;
   padding-bottom: 15px;
   width: 90%; }
   @media only screen and (min-width: 576px) {
@@ -218,9 +226,13 @@ figcaption {
       -ms-flex-align: end;
           align-items: flex-end; }
 
-@media only screen and (min-width: 992px) {
-  .contact__book {
-    width: 350px; } }
+.contact__book {
+  text-align: justify;
+  width: 90%;
+  font-size: 2.8vh; }
+  @media only screen and (min-width: 992px) {
+    .contact__book {
+      width: 400px; } }
 
 .program__icon {
   font-size: 18vh; }
@@ -241,10 +253,6 @@ figcaption {
   .program__big-title {
     padding-left: 8vh;
     text-align: left; } }
-
-@media only screen and (min-width: 992px) {
-  .requirements__big-title {
-    text-align: center; } }
 
 @media only screen and (min-width: 992px) {
   .contact__big-title {

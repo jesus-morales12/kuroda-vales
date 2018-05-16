@@ -1,3 +1,41 @@
+%testimonials__pic {
+    height: 30vh;
+    width: 100%;
+    background: {
+        repeat: no-repeat;
+        size: cover;
+        position: top;
+    } 
+    @include responsive(l) {
+        height: 36vh;
+        background: {
+            repeat: no-repeat;
+            size: cover;
+        }
+    }
+}
+
+.testimonials__pic {
+    &-1 {
+        @extend %testimonials__pic;
+        background: {
+            image: url('http://www.elcomercio.com/files/article_main/uploads/2017/05/12/5916775bc3359.jpeg'); // position: center;
+        }
+    }
+    &-2 {
+        @extend %testimonials__pic;
+        background: {
+            image: url('https://i.imgur.com/UgESOEt.png'); // position: center;
+        }
+    }
+    &-3 {
+        @extend %testimonials__pic;
+        background: {
+            image: url('http://www.foodrepublic.com/wp-content/uploads/2014/01/antonego.jpg'); // position: center;
+        }
+    }
+}
+
 .header__bg {
     background-image: url('../media/bg-1.jpg');
     width: 100%;
@@ -13,20 +51,3 @@
         justify-content: flex-start;
     }
 }
-
-.test-bg {
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    // background-image: url('../media/siberian-huskies.jpg');
-}
-
-.test-bg-2 {
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    // background-image: url('../media/animal-animal-photography-blur-399647.jpg');
-}
- 
