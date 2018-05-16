@@ -1,8 +1,32 @@
 %section {
     width: 100%;
-    min-height: 100vh;
+    padding: {
+        top: 20px;
+        bottom: 30px;
+    }
     display: flex;
     flex-wrap: wrap;
+    min-height: 90vh;
+    border: 1px solid rgba($color: $black, $alpha: 0.5)
+}
+
+%section__titles {
+    text-align: center;
+    width: 100%;
+    align-self: flex-start;
+    padding: {
+        top: 10px; // bottom: 15px;
+    }
+    font-size: 7vh;
+    @include responsive(m) {
+        font-size: 7.2vh;
+    }
+    @include responsive(l) {
+        font-size: 7.4vh;
+    }
+    @include responsive(xl) {
+        font-size: 7.6vh;
+    }
 }
 
 // BLOCK
@@ -41,75 +65,152 @@
 
 #programa {
     @extend %section;
-    background-color: #eeeeee;
+    background-color: #fefefe;
+    justify-content: center;
     @include responsive(s) {}
-    @include responsive(m) {}
-    @include responsive(l) {}
-    @include responsive(xl) {
-        justify-content: space-around;
-        align-content: center;
-        // align-items: center;
+    @include responsive(m) {
+        justify-content: space-around; // align-content: center;
+    }
+}
+
+#requisitos {
+    @extend %section;
+}
+
+#contacto {
+    @extend %section;
+}
+
+.testimonials {
+    @include responsive(l) {
+        width: 500px;
     }
 }
 
 // ELEMENT
+.testimonials__box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.testimonials__pic {
+    @include responsive(l) {
+        height: 300px;
+        width: 100%;
+        background: {
+            image: url('../media/profile-demo.jpg');
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+    }
+}
+
+.testimonials__text {
+    padding: 8px 5px;
+}
+
+figcaption {
+    font: {
+        size: 22px;
+        weight: bold;
+    }
+    padding-top: 5px;
+}
+
 .program__container {
     text-align: center;
-    @include responsive(s) {}
-    @include responsive(m) {}
-    @include responsive(l) {}
-    @include responsive(xl) {
-        width: 300px;
-        align-self: center;
+    padding-bottom: 15px;
+    width: 90%;
+    @include responsive(s) {
+        width: 85%;
+    }
+    @include responsive(m) {
+        // width: 220px;
+        width: 30%;
+    } // @include responsive(l) {
+    //     width: 290px;
+    // }
+    // @include responsive(xl) {
+    //     width: 350px;
+    // }
+}
+
+.contact__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.contact__book {
+    @include responsive(l) {
+        width: 350px;
     }
 }
 
 .program__icon {
-    font-size: 20vh;
-    @include responsive(s) {}
-    @include responsive(m) {}
-    @include responsive(l) {}
+    font-size: 18vh;
+    @include responsive(s) {
+        font-size: 18.5vh;
+    }
+    @include responsive(m) {
+        font-size: 19vh;
+    }
+    @include responsive(l) {
+        font-size: 19.5vh;
+    }
     @include responsive(xl) {
-        // font-size: 45vh;
+        font-size: 20vh;
     }
 }
 
 .program__big-title {
-    font-size: 8.2vh;
-    text-align: center;
-    width: 100%;
-    padding: {
-        top: 10px;
-        bottom: 8px;
-    }
-    @include responsive(xl) {
+    @extend %section__titles;
+    @include responsive(l) {
+        padding-left: 8vh;
         text-align: left;
-        width: 100px;
+    }
+}
+
+.requirements__big-title {
+    @extend %section__titles;
+    @include responsive(l) {
+        text-align: center;
+    }
+}
+
+.contact__big-title {
+    @extend %section__titles;
+    @include responsive(l) {
+        padding-right: 8vh;
+        text-align: right;
     }
 }
 
 .program__title {
-    font-size: 8vh;
     padding: {
         top: 5px;
         bottom: 15px;
     }
+    font-size: 5.6vh;
+    @include responsive(m) {
+        font-size: 5.8vh;
+    }
+    @include responsive(l) {
+        font-size: 6vh;
+    }
+    @include responsive(xl) {
+        font-size: 6.2vh;
+    }
 }
 
 .program__description {
-    font-size: 3vh;
+    font-size: 2.6vh;
 }
 
 // MOD
-.--active {
-    background-color: $black;
-    color: #fff;
-}
-
-// TEST 
-
-.test {
-    display: flex;
-    justify-content: space-between;
-    width: 1000px;
-}

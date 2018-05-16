@@ -4,13 +4,13 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     padding-top: 15px;
-    @include responsive(xl) {
-        padding-top: 20px;
-    }
+    // @include responsive(xl) {
+    //     padding-top: 20px;
+    // }
 }
 
 // ELEMENT
