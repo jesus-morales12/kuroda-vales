@@ -73,25 +73,48 @@
   background-image: url("http://www.foodrepublic.com/wp-content/uploads/2014/01/antonego.jpg"); }
 
 .header__bg {
-  background-image: url("../media/bg-1.jpg");
+  background-image: url("../media/clock-bg-min.jpg");
   width: 100%;
   height: 92vh;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: right;
-  background-position-y: bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top; }
   @media only screen and (min-width: 576px) {
     .header__bg {
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; } }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      background-position: center; } }
+  @media only screen and (min-width: 1400px) {
+    .header__bg {
+      background-position-x: right;
+      background-position-y: center; } }
+
+.logo-container {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0; }
+  @media only screen and (min-width: 576px) {
+    .logo-container {
+      margin-left: 30px; } }
+  @media only screen and (min-width: 1400px) {
+    .logo-container {
+      width: 33%;
+      text-align: left; } }
+
+.logo {
+  width: 80%; }
+  @media only screen and (min-width: 1400px) {
+    .logo {
+      width: 100%; } }
 
 #programa, #requisitos, #contacto {
   width: 100%;
@@ -103,8 +126,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-height: 90vh;
-  border: 1px solid rgba(20, 20, 20, 0.5); }
+  min-height: 90vh; }
 
 .program__big-title, .requirements__big-title, .contact__big-title {
   width: 100%;
@@ -123,18 +145,17 @@
       font-size: 7.6vh; } }
 
 .big-title-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 275px;
-  margin-top: 16vh; }
+  z-index: 9999;
+  width: 80%;
+  margin-top: 16vh;
+  margin-left: 15px; }
   @media only screen and (min-width: 576px) {
     .big-title-container {
       width: 450px;
-      margin-left: 100px; } }
+      margin-left: 30px; } }
   @media only screen and (min-width: 768px) {
     .big-title-container {
-      width: 500px; } }
+      width: 550px; } }
   @media only screen and (min-width: 1400px) {
     .big-title-container {
       width: 650px; } }
@@ -147,13 +168,13 @@
       font-size: 60px; } }
   @media only screen and (min-width: 768px) {
     .big-title {
-      font-size: 75px; } }
+      font-size: 65px; } }
   @media only screen and (min-width: 992px) {
     .big-title {
-      font-size: 80px; } }
+      font-size: 75px; } }
   @media only screen and (min-width: 1400px) {
     .big-title {
-      font-size: 95px; } }
+      font-size: 80px; } }
 
 #programa {
   background-color: #fefefe;
@@ -164,6 +185,12 @@
     #programa {
       -ms-flex-pack: distribute;
           justify-content: space-around; } }
+
+#requisitos {
+  background-color: #02A12E; }
+
+#contacto {
+  background-color: #1AFEF1; }
 
 .testimonials {
   padding: 12px;
@@ -190,7 +217,7 @@
 
 .testimonials__title {
   font-size: 4.6vh;
-  padding-bottom: 8px; }
+  padding-bottom: 12px; }
 
 .testimonials__text {
   padding: 8px;
