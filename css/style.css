@@ -109,13 +109,19 @@
   width: 100%;
   align-self: flex-start;
   padding-top: 10px;
-  font-size: 7vh; }
+  font-size: 6.8vh; }
   @media only screen and (min-width: 576px) {
     .program__big-title, .requirements__big-title, .contact__big-title {
-      font-size: 10vh; } }
+      font-size: 7vh; } }
+  @media only screen and (min-width: 768px) {
+    .program__big-title, .requirements__big-title, .contact__big-title {
+      font-size: 7.2vh; } }
   @media only screen and (min-width: 992px) {
     .program__big-title, .requirements__big-title, .contact__big-title {
-      font-size: 8vh; } }
+      font-size: 7.4vh; } }
+  @media only screen and (min-width: 1400px) {
+    .program__big-title, .requirements__big-title, .contact__big-title {
+      font-size: 7.6vh; } }
 
 .program {
   width: 100%;
@@ -166,7 +172,7 @@
   background-color: #02A12E; }
 
 #contacto {
-  background-color: #1AFEF1; }
+  background-color: #FFFFFF; }
 
 .testimonials {
   padding: 12px;
@@ -199,8 +205,10 @@ figcaption {
   padding-top: 5px; }
 
 .program__container {
-  padding-bottom: 15px;
-  width: 90%; }
+  width: 90%;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 15px; }
   @media only screen and (min-width: 576px) {
     .program__container {
       width: 85%; } }
@@ -224,19 +232,19 @@ figcaption {
       width: 400px; } }
 
 .program__icon {
-  font-size: 16.5vh; }
+  font-size: 15.5vh; }
   @media only screen and (min-width: 576px) {
     .program__icon {
-      font-size: 17vh; } }
+      font-size: 16vh; } }
   @media only screen and (min-width: 768px) {
     .program__icon {
-      font-size: 17.5vh; } }
+      font-size: 16.5vh; } }
   @media only screen and (min-width: 992px) {
     .program__icon {
-      font-size: 18vh; } }
+      font-size: 17vh; } }
   @media only screen and (min-width: 1400px) {
     .program__icon {
-      font-size: 18.5vh; } }
+      font-size: 17.5vh; } }
 
 @media only screen and (min-width: 992px) {
   .program__big-title {
@@ -258,20 +266,33 @@ figcaption {
 .program__title {
   padding-top: 5px;
   padding-bottom: 15px;
-  font-size: 5.6vh; }
+  font-size: 5.2vh; }
   @media only screen and (min-width: 576px) {
     .program__title {
-      font-size: 5.8vh; } }
+      font-size: 5.4vh; } }
   @media only screen and (min-width: 992px) {
     .program__title {
-      font-size: 6vh; } }
+      font-size: 5.6vh; } }
   @media only screen and (min-width: 1400px) {
     .program__title {
-      font-size: 6.2vh; } }
+      font-size: 6vh; } }
 
 .program__description {
-  font-size: 3vh;
-  text-align: center; }
+  font-size: 2.5vh;
+  text-align: justify; }
+  @media only screen and (min-width: 576px) {
+    .program__description {
+      font-size: 2.7vh; } }
+  @media only screen and (min-width: 768px) {
+    .program__description {
+      font-size: 2.9vh;
+      text-align: center; } }
+  @media only screen and (min-width: 992px) {
+    .program__description {
+      font-size: 3.1vh; } }
+  @media only screen and (min-width: 1400px) {
+    .program__description {
+      font-size: 3.3vh; } }
 
 .program__overall, .requirements__overall {
   width: 90%;

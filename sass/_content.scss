@@ -18,12 +18,18 @@
     padding: {
         top: 10px; // bottom: 15px;
     }
-    font-size: 7vh;
+    font-size: 6.8vh;
     @include responsive(s) {
-        font-size: 10vh;
+        font-size: 7vh;
+    }
+    @include responsive(m) {
+        font-size: 7.2vh;
     }
     @include responsive(l) {
-        font-size: 8vh;
+        font-size: 7.4vh;
+    }
+    @include responsive(xl) {
+        font-size: 7.6vh;
     }
 }
 
@@ -87,7 +93,7 @@
 
 #contacto {
     @extend %section;
-    background-color: $light-blue;
+    background-color: $white;
 }
 
 .testimonials {
@@ -133,8 +139,13 @@ figcaption {
 
 .program__container {
     // text-align: center;
-    padding-bottom: 15px;
+    // padding-bottom: 15px;
     width: 90%;
+    padding: {
+        right: 5px;
+        left: 5px;
+        bottom: 15px;
+    }
     @include responsive(s) {
         width: 85%;
     }
@@ -167,18 +178,18 @@ figcaption {
 }
 
 .program__icon {
-    font-size: 16.5vh;
+    font-size: 15.5vh;
     @include responsive(s) {
-        font-size: 17vh;
+        font-size: 16vh;
     }
     @include responsive(m) {
-        font-size: 17.5vh;
+        font-size: 16.5vh;
     }
     @include responsive(l) {
-        font-size: 18vh;
+        font-size: 17vh;
     }
     @include responsive(xl) {
-        font-size: 18.5vh;
+        font-size: 17.5vh;
     }
 }
 
@@ -218,21 +229,34 @@ figcaption {
         top: 5px;
         bottom: 15px;
     }
-    font-size: 5.6vh;
+    font-size: 5.2vh;
     @include responsive(s) {
-        font-size: 5.8vh;
+        font-size: 5.4vh;
     }
     @include responsive(l) {
-        font-size: 6vh;
+        font-size: 5.6vh;
     }
     @include responsive(xl) {
-        font-size: 6.2vh;
+        font-size: 6vh;
     }
 }
 
 .program__description {
-    font-size: 3vh;
-    text-align: center;
+    font-size: 2.5vh;
+    text-align: justify;
+    @include responsive(s) {
+        font-size: 2.7vh;
+    }
+    @include responsive(m) {
+        font-size: 2.9vh;
+        text-align: center;
+    }
+    @include responsive(l) {
+        font-size: 3.1vh;
+    }
+    @include responsive(xl) {
+        font-size: 3.3vh;
+    }
 }
 
 %__overall {
