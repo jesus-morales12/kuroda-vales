@@ -73,9 +73,9 @@
 }
 
 .requisitos__bg {
+    background: linear-gradient(rgba($color: $white, $alpha: 0.2)), url('../media/program_bg-3.jpg') no-repeat center;
     background: {
-        image: url('../media/program_bg-3.jpg');
-        position: center;
+        position: bottom;
         size: cover;
     }
 }

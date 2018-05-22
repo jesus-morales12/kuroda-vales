@@ -109,8 +109,9 @@
   background-size: cover; }
 
 .requisitos__bg {
-  background-image: url("../media/program_bg-3.jpg");
-  background-position: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2))), url("../media/program_bg-3.jpg") no-repeat center;
+  background: linear-gradient(rgba(255, 255, 255, 0.2)), url("../media/program_bg-3.jpg") no-repeat center;
+  background-position: bottom;
   background-size: cover; }
 
 #programa, #requisitos, #contacto {
@@ -327,22 +328,67 @@ figcaption {
   font-size: 3vh;
   text-align: center; }
 
-.section__overall {
+.program__overall, .requirements__overall {
   width: 90%;
+  padding: 10px 0;
+  text-align: justify; }
+
+.program__overall {
   margin: 0 auto;
-  font-size: 3vh;
   line-height: 135%;
-  padding: 5px;
-  text-align: center; }
+  font-size: 3vh; }
   @media only screen and (min-width: 992px) {
-    .section__overall {
-      padding: 5px 8vh;
-      text-align: justify;
-      margin: 0;
-      width: auto; } }
+    .program__overall {
+      padding-top: 20px;
+      padding-left: 8vh;
+      padding-right: 8vh;
+      margin: 0; } }
   @media only screen and (min-width: 1400px) {
-    .section__overall {
+    .program__overall {
+      width: 85%; } }
+
+.requirements__overall {
+  margin: 0 auto;
+  font-size: 3.2vh; }
+  @media only screen and (min-width: 768px) {
+    .requirements__overall {
+      text-align: center; } }
+  @media only screen and (min-width: 992px) {
+    .requirements__overall {
+      width: 965px;
       padding-top: 20px; } }
+
+.requirements {
+  width: 85%;
+  text-align: justify;
+  margin: 0 auto; }
+  @media only screen and (min-width: 576px) {
+    .requirements {
+      width: 80%; } }
+  @media only screen and (min-width: 992px) {
+    .requirements {
+      width: auto; } }
+
+.requirements__list {
+  list-style: none; }
+
+.requirements__item {
+  font-size: 3.2vh;
+  line-height: 120%;
+  padding: 10px 0; }
+  @media only screen and (min-width: 992px) {
+    .requirements__item {
+      padding: 12px 0; } }
+  @media only screen and (min-width: 1400px) {
+    .requirements__item {
+      padding: 8px 0; } }
+
+.requirements__item > i {
+  font-size: 4vh;
+  padding-right: 20px; }
+  @media only screen and (min-width: 1400px) {
+    .requirements__item > i {
+      padding-right: 50px; } }
 
 .footer {
   width: 100%;

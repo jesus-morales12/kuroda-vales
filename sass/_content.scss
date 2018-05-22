@@ -19,7 +19,6 @@
         top: 10px; // bottom: 15px;
     }
     font-size: 7vh;
-
     @include responsive(s) {
         font-size: 10vh;
     }
@@ -223,7 +222,6 @@ figcaption {
     @include responsive(s) {
         font-size: 5.8vh;
     }
-
     @include responsive(l) {
         font-size: 6vh;
     }
@@ -237,21 +235,78 @@ figcaption {
     text-align: center;
 }
 
-.section__overall {
+%__overall {
     width: 90%;
+    padding: 10px 0;
+    text-align: justify;
+}
+
+.program__overall {
+    @extend %__overall;
     margin: 0 auto;
-    font-size: 3vh;
     line-height: 135%;
-    padding: 5px;
-    text-align: center;
+    font-size: 3vh;
     @include responsive(l) {
-        padding: 5px 8vh;
-        text-align: justify;
+        // padding: 20px 8vh;
+        padding: {
+            top: 20px;
+            left: 8vh;
+            right: 8vh;
+        }
         margin: 0;
-        width: auto;
     }
     @include responsive(xl) {
-        padding-top: 20px; // font-size: 3vh;
+        width: 85%;
+    }
+}
+
+.requirements__overall {
+    @extend %__overall;
+    margin: 0 auto;
+    font-size: 3.2vh;
+    @include responsive(m) {
+        text-align: center;
+    }
+    @include responsive(l) {
+        width: 965px;
+        padding-top: 20px;
+    }
+}
+
+.requirements {
+    width: 85%;
+    text-align: justify;
+    margin: 0 auto;
+    @include responsive(s) {
+        width: 80%;
+    }
+    @include responsive(l) {
+        width: auto;
+    }
+}
+
+.requirements__list {
+    list-style: none;
+}
+
+.requirements__item {
+    font-size: 3.2vh;
+    line-height: 120%;
+    padding: 10px 0;
+    @include responsive(l) {
+        padding: 12px 0;
+    }
+    @include responsive(xl) {
+        padding: 8px 0;
+    }
+}
+
+.requirements__item>i {
+    font-size: 4vh;
+    padding-right: 20px;
+    @include responsive(l) {}
+    @include responsive(xl) {
+        padding-right: 50px;
     }
 }
 
