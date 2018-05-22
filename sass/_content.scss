@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    min-height: 90vh;
+    min-height: 92vh;
 }
 
 %section__titles {
@@ -19,14 +19,12 @@
         top: 10px; // bottom: 15px;
     }
     font-size: 7vh;
-    @include responsive(m) {
-        font-size: 7.2vh;
+
+    @include responsive(s) {
+        font-size: 10vh;
     }
     @include responsive(l) {
-        font-size: 7.4vh;
-    }
-    @include responsive(xl) {
-        font-size: 7.6vh;
+        font-size: 8vh;
     }
 }
 
@@ -79,7 +77,7 @@
     justify-content: center;
     @include responsive(s) {}
     @include responsive(m) {
-        justify-content: space-around; // align-content: center;
+        justify-content: space-around;
     }
 }
 
@@ -170,18 +168,18 @@ figcaption {
 }
 
 .program__icon {
-    font-size: 18vh;
+    font-size: 16.5vh;
     @include responsive(s) {
-        font-size: 18.5vh;
+        font-size: 17vh;
     }
     @include responsive(m) {
-        font-size: 19vh;
+        font-size: 17.5vh;
     }
     @include responsive(l) {
-        font-size: 19.5vh;
+        font-size: 18vh;
     }
     @include responsive(xl) {
-        font-size: 20vh;
+        font-size: 18.5vh;
     }
 }
 
@@ -208,15 +206,24 @@ figcaption {
     }
 }
 
+.program__header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .program__title {
     padding: {
         top: 5px;
         bottom: 15px;
     }
     font-size: 5.6vh;
-    @include responsive(m) {
+    @include responsive(s) {
         font-size: 5.8vh;
     }
+
     @include responsive(l) {
         font-size: 6vh;
     }
@@ -226,15 +233,26 @@ figcaption {
 }
 
 .program__description {
-    font-size: 2.6vh;
-    display: block;
-    text-align: left;
-    padding-left: 8vh;
+    font-size: 3vh;
+    text-align: center;
 }
 
-.program__container>.program__description {
+.section__overall {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 3vh;
+    line-height: 135%;
+    padding: 5px;
     text-align: center;
-    padding-left: 0;
+    @include responsive(l) {
+        padding: 5px 8vh;
+        text-align: justify;
+        margin: 0;
+        width: auto;
+    }
+    @include responsive(xl) {
+        padding-top: 20px; // font-size: 3vh;
+    }
 }
 
 // MOD

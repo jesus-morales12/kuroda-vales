@@ -75,7 +75,7 @@
 .header__bg {
   background-image: url("../media/bg-1.jpg");
   width: 100%;
-  height: 92vh;
+  height: 86vh;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,8 +89,9 @@
           justify-content: center; }
   @media only screen and (min-width: 576px) {
     .header__bg {
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       background-position-x: bottom;
       background-position-y: bottom; } }
 
@@ -101,27 +102,16 @@
     .big-logo-container {
       margin-left: 30px; } }
 
-.big-logo {
-  width: 100%; }
+.programa__bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.62))), url("../media/program_bg-1.jpg") no-repeat center;
+  background: linear-gradient(rgba(255, 255, 255, 0.62)), url("../media/program_bg-1.jpg") no-repeat center;
+  background-position: center;
+  background-size: cover; }
 
-.logo-container {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 0; }
-  @media only screen and (min-width: 576px) {
-    .logo-container {
-      margin-left: 30px; } }
-  @media only screen and (min-width: 1400px) {
-    .logo-container {
-      width: 33%;
-      text-align: left; } }
-
-.logo {
-  width: 90%; }
-  @media only screen and (min-width: 992px) {
-    .logo {
-      width: 30%; } }
+.requisitos__bg {
+  background-image: url("../media/program_bg-3.jpg");
+  background-position: center;
+  background-size: cover; }
 
 #programa, #requisitos, #contacto {
   width: 100%;
@@ -137,7 +127,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 90vh; }
+  min-height: 92vh; }
 
 .program__big-title, .requirements__big-title, .contact__big-title {
   width: 100%;
@@ -145,15 +135,12 @@
       align-self: flex-start;
   padding-top: 10px;
   font-size: 7vh; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 576px) {
     .program__big-title, .requirements__big-title, .contact__big-title {
-      font-size: 7.2vh; } }
+      font-size: 10vh; } }
   @media only screen and (min-width: 992px) {
     .program__big-title, .requirements__big-title, .contact__big-title {
-      font-size: 7.4vh; } }
-  @media only screen and (min-width: 1400px) {
-    .program__big-title, .requirements__big-title, .contact__big-title {
-      font-size: 7.6vh; } }
+      font-size: 8vh; } }
 
 .program {
   width: 100%;
@@ -283,19 +270,19 @@ figcaption {
       width: 400px; } }
 
 .program__icon {
-  font-size: 18vh; }
+  font-size: 16.5vh; }
   @media only screen and (min-width: 576px) {
     .program__icon {
-      font-size: 18.5vh; } }
+      font-size: 17vh; } }
   @media only screen and (min-width: 768px) {
     .program__icon {
-      font-size: 19vh; } }
+      font-size: 17.5vh; } }
   @media only screen and (min-width: 992px) {
     .program__icon {
-      font-size: 19.5vh; } }
+      font-size: 18vh; } }
   @media only screen and (min-width: 1400px) {
     .program__icon {
-      font-size: 20vh; } }
+      font-size: 18.5vh; } }
 
 @media only screen and (min-width: 992px) {
   .program__big-title {
@@ -307,11 +294,26 @@ figcaption {
     padding-right: 8vh;
     text-align: right; } }
 
+.program__header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .program__title {
   padding-top: 5px;
   padding-bottom: 15px;
   font-size: 5.6vh; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 576px) {
     .program__title {
       font-size: 5.8vh; } }
   @media only screen and (min-width: 992px) {
@@ -322,14 +324,25 @@ figcaption {
       font-size: 6.2vh; } }
 
 .program__description {
-  font-size: 2.6vh;
-  display: block;
-  text-align: left;
-  padding-left: 8vh; }
+  font-size: 3vh;
+  text-align: center; }
 
-.program__container > .program__description {
-  text-align: center;
-  padding-left: 0; }
+.section__overall {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 3vh;
+  line-height: 135%;
+  padding: 5px;
+  text-align: center; }
+  @media only screen and (min-width: 992px) {
+    .section__overall {
+      padding: 5px 8vh;
+      text-align: justify;
+      margin: 0;
+      width: auto; } }
+  @media only screen and (min-width: 1400px) {
+    .section__overall {
+      padding-top: 20px; } }
 
 .footer {
   width: 100%;
