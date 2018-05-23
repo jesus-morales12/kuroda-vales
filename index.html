@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="description" content="Alguna descripción corta de Vale Más Kuroda"> -->
+    <meta name="description" content="Alguna descripción corta de Vale Más Kuroda">
     <!-- <meta property="og:url" content="https://experiencias.kuroda.com" /> -->
     <meta property="og:title" content="Vale Más Kuroda" />
     <meta property="og:description" content="Alguna descripción corta de Vale Más Kuroda" />
@@ -176,6 +176,9 @@
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination swiper-pagination-black"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-black"></div>
+                        <div class="swiper-button-prev swiper-button-black"></div>
                     </div>
                 </div>
                 <div class="contact__book">
@@ -192,19 +195,19 @@
             <h4 class="footer__title">DESCUBRE</h4>
             <ul class="footer__options">
                 <li>
-                    <a href="https://kuroda.com/promociones.html" class="footer__link">Promociones</a>
+                    <a href="https://kuroda.com/promociones.html" target="_blank" class="footer__link">Promociones</a>
                 </li>
                 <li>
-                    <a href="https://kuroda.com/sucursales.html" class="footer__link">Sucursales</a>
+                    <a href="https://kuroda.com/sucursales.html" target="_blank" class="footer__link">Sucursales</a>
                 </li>
                 <li>
-                    <a href="https://kuroda.com/marcas.html" class="footer__link">Marcas</a>
+                    <a href="https://kuroda.com/marcas.html" target="_blank" class="footer__link">Marcas</a>
                 </li>
                 <li>
-                    <a href="https://kuroda.com/contacto.html" class="footer__link">Contacto</a>
+                    <a href="https://kuroda.com/contacto.html" target="_blank" class="footer__link">Contacto</a>
                 </li>
                 <li>
-                    <a href="https://kuroda.com/nosotros.html" class="footer__link">Nosotros</a>
+                    <a href="https://kuroda.com/nosotros.html" target="_blank" class="footer__link">Nosotros</a>
                 </li>
             </ul>
         </div>
@@ -214,13 +217,13 @@
             <h4 class="footer__title">RADIO KURODA</h4>
             <ul class="footer__options">
                 <li>
-                    <a href="radio-kuroda-culiacan.html" class="footer__link">Radio Sinaloa</a>
+                    <a href="https://kuroda.com/radio-kuroda-culiacan.html" target="_blank" class="footer__link">Radio Sinaloa</a>
                 </li>
                 <li>
-                    <a href="radio-kuroda-sonora.html" class="footer__link">Radio Sonora</a>
+                    <a href="https://kuroda.com/radio-kuroda-sonora.html" target="_blank" class="footer__link">Radio Sonora</a>
                 </li>
                 <li>
-                    <a href="radio-kuroda-baja.html" class="footer__link">Radio Baja</a>
+                    <a href="https://kuroda.com/radio-kuroda-baja.html" target="_blank" class="footer__link">Radio Baja</a>
                 </li>
             </ul>
         </div>
@@ -246,16 +249,16 @@
             <h4 class="footer__title">SÍGUENOS</h4>
             <ul class="footer__options">
                 <li>
-                    <a href="https://www.facebook.com/KurodaMX/" class="footer__link">Facebook</a>
+                    <a href="https://www.facebook.com/KurodaMX/" target="_blank" class="footer__link">Facebook</a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/kurodamx" class="footer__link">Twitter</a>
+                    <a href="https://twitter.com/kurodamx" target="_blank" class="footer__link">Twitter</a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/channel/UCtETojrCXZ0DHKA1rpmE4pQ" class="footer__link">YouTube</a>
+                    <a href="https://www.youtube.com/channel/UCtETojrCXZ0DHKA1rpmE4pQ" target="_blank" class="footer__link">YouTube</a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/kurodamx/" class="footer__link">Instagram</a>
+                    <a href="https://www.instagram.com/kurodamx/" target="_blank" class="footer__link">Instagram</a>
                 </li>
             </ul>
         </div>
@@ -265,10 +268,10 @@
             <h4 class="footer__title">LEGAL</h4>
             <ul class="footer__options">
                 <li>
-                    <a href="privacidad.html" class="footer__link">Aviso de privacidad</a>
+                    <a href="https://kuroda.com/privacidad.html" target="_blank" class="footer__link">Aviso de privacidad</a>
                 </li>
                 <li>
-                    <a href="#" class="footer__link">Términos y condiciones</a>
+                    <a href="#" target="_blank" class="footer__link">Términos y condiciones</a>
                 </li>
             </ul>
             <ul class="footer__options">
@@ -290,16 +293,19 @@
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
             spaceBetween: 20,
-            // autoplay: {
-            //     delay: 5500,
-            //     disableOnInteraction: false,
-            // },
-            // init: false,
+            autoplay: {
+                delay: 4800,
+                disableOnInteraction: false,
+            },
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            loop: true
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
         });
     </script>
 
