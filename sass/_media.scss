@@ -37,7 +37,7 @@
 }
 
 .header__bg {
-    background-image: url('../media/bg-1.jpg');
+    // background-image: url('../media/bg-1.jpg');
     width: 100%;
     height: 86vh;
     position: relative;
@@ -64,18 +64,18 @@
     @include responsive(xl) {}
 }
 
-.programa__bg {
-    background: linear-gradient(rgba($color: $white, $alpha: 0.62)), url('../media/program_bg-1.jpg') no-repeat center;
-    background: {
-        position: center;
-        size: cover;
-    }
-}
+// .programa__bg {
+//     background: linear-gradient(rgba($color: $white, $alpha: 0.62)), url('../media/program_bg-1.jpg') no-repeat center;
+//     background: {
+//         position: center;
+//         size: cover;
+//     }
+// }
 
-.requisitos__bg {
-    background: linear-gradient(rgba($color: $white, $alpha: 0.2)), url('../media/program_bg-3.jpg') no-repeat center;
-    background: {
-        position: bottom;
-        size: cover;
-    }
-}
+// .requisitos__bg {
+//     background: linear-gradient(rgba($color: $white, $alpha: 0.2)), url('../media/program_bg-3.jpg') no-repeat center;
+//     background: {
+//         position: bottom;
+//         size: cover;
+//     }
+// }

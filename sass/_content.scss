@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     min-height: 92vh;
+    border: 1px solid black;
 }
 
 %section__titles {
@@ -88,12 +89,12 @@
 
 #requisitos {
     @extend %section;
-    background-color: $light-green;
+    // background-color: $light-green;
 }
 
 #contacto {
     @extend %section;
-    background-color: $white;
+    background-color: $black;
 }
 
 .testimonials {
