@@ -1,13 +1,13 @@
 // BLOCK
 .navbar {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
     position: absolute;
     top: 0;
-    width: 100%;
-    z-index: 99;
+    left: 0;
     background: {
         color: rgba($color: $black, $alpha: 0.3);
     }
@@ -18,20 +18,8 @@
     text-decoration: none;
     color: $white;
     align-self: center;
-    font-size: 15px;
+    font-size: 20px;
     padding: 8px 0;
-    @include responsive(s) {
-        font-size: 17px;
-    }
-    @include responsive(m) {
-        font-size: 19px;
-    }
-    @include responsive(l) {
-        font-size: 21px;
-    }
-    @include responsive(xl) {
-        font-size: 24px;
-    }
 }
 
 // MOD

@@ -8,6 +8,9 @@
     font-size: 17px;
     border: 1px solid rgba($color: $black, $alpha: 0.15);
     border-radius: 3px;
+    @include responsive(m) {
+        font-size: 17.5px;
+    }
 }
 
 .label {
@@ -15,15 +18,21 @@
     align-self: flex-start;
     padding-bottom: 4px;
     font-size: 16.5px;
+    @include responsive(m) {
+        font-size: 2.2vh;
+    }
+    @include responsive(l) {
+        font-size: 2.4vh;
+    }
+    @include responsive(xl) {
+        font-size: 2.6vh;
+    }
 }
 
 .form-container {
-    padding: {
-        top: 5px;
-        bottom: 15px;
-    }
-    @include responsive(xl) {
-        padding-bottom: 20px;
+    padding-bottom: 25px;
+    @include responsive(l) {
+        padding: 0;
     }
 }
 
@@ -48,6 +57,10 @@ form>ul {
     list-style: none;
 }
 
+form>ul>li {
+    @include responsive(m) {}
+}
+
 .button-container {
     display: inline-flex;
     justify-content: center;
@@ -58,18 +71,21 @@ form>ul {
     font: {
         size: 17px;
     }
-    padding: 10px 15px;
+    padding: 8px 0;
     margin-top: 15px;
-    border: none !important;
+    border: none;
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
     width: 100%;
+    @include responsive(l) {
+        width: 50%;
+    }
 }
 
 .--submit {
     background-color: $light-green;
     color: $white;
     font: {
-        size: 20px;
+        size: 18px;
         weight: bold;
     }
     @include responsive(l) {

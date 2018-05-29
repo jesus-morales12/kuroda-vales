@@ -5,6 +5,12 @@
         repeat: no-repeat;
         size: cover;
     }
+    @include responsive(s) {
+        height: 50vh;
+    }
+    @include responsive(s) {
+        height: 35vh;
+    }
     @include responsive(l) {
         height: 40vh;
     }
@@ -17,7 +23,7 @@
     &-1 {
         @extend %testimonials__pic;
         background: {
-            image: url('../media/kuroda-2.jpg'); // size: contain;
+            image: url('../media/kuroda-5.jpg'); // size: contain;
             position: top;
         }
     }
@@ -48,39 +54,39 @@
 .programa__bg {}
 
 .requisitos__bg {
-    background: linear-gradient(rgba($color: $black, $alpha: 0.7)), url('../media/kuroda-5.jpg') no-repeat;
-    background: {
-        position: center;
-        size: cover;
-        repeat: no-repeat;
-    }
+    // background: linear-gradient(rgba($color: $black, $alpha: 0.7)), url('../media/kuroda-5.jpg') no-repeat;
+    // background: {
+    //     position: center;
+    //     size: cover;
+    //     repeat: no-repeat;
+    // }
     @include responsive(l) {
         background: {
             image: url('../media/kuroda-2.jpg');
             size: contain;
             position: right;
+            repeat: no-repeat;
         }
     }
 }
 
 .contacto__bg {
-    @include responsive(m) {
-        background: linear-gradient(rgba($color: $white, $alpha: 0.5)), url('../media/kuroda-7.jpg') no-repeat center;
-    }
+    // background: linear-gradient(rgba($color: $white, $alpha: 0.5)), url('../media/kuroda-7.jpg') no-repeat center; 
+    // @include responsive(l) {
+    //     background: linear-gradient(rgba($color: $white, $alpha: 0.5)), url('../media/kuroda-7.jpg') no-repeat center;
+    // }
 }
 
 .avatar-container {
     display: none;
     @include responsive(l) {
         display: block;
-        text-align: left;
+        text-align: center;
     }
 }
 
 .avatar {
-    @include responsive(l) {
-        width: 20vh;
-    }
+    width: 45%;
 }
 
 .header__bg-0 {
