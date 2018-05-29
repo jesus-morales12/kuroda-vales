@@ -4,14 +4,12 @@
     background: {
         repeat: no-repeat;
         size: cover;
-        position: top;
     }
     @include responsive(l) {
-        height: 36vh;
-        background: {
-            repeat: no-repeat;
-            size: cover;
-        }
+        height: 40vh;
+    }
+    @include responsive(xl) {
+        height: 42vh;
     }
 }
 
@@ -19,7 +17,8 @@
     &-1 {
         @extend %testimonials__pic;
         background: {
-            image: url('http://www.elcomercio.com/files/article_main/uploads/2017/05/12/5916775bc3359.jpeg'); // position: center;
+            image: url('../media/kuroda-2.jpg'); // size: contain;
+            position: top;
         }
     }
     &-2 {
@@ -36,24 +35,6 @@
     }
 }
 
-.header__bg {
-    // background-image: url('../media/bg-1.jpg');
-    width: 100%;
-    height: 86vh;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: right;
-    background-position-y: center;
-    display: flex;
-    justify-content: center;
-    @include responsive(s) {
-        justify-content: flex-start;
-        background-position-x: bottom;
-        background-position-y: bottom;
-    }
-}
-
 .big-logo-container {
     width: 33%;
     margin-top: 8vh; // margin-left: 15px;
@@ -64,18 +45,74 @@
     @include responsive(xl) {}
 }
 
-// .programa__bg {
-//     background: linear-gradient(rgba($color: $white, $alpha: 0.62)), url('../media/program_bg-1.jpg') no-repeat center;
-//     background: {
-//         position: center;
-//         size: cover;
-//     }
-// }
+.programa__bg {}
 
-// .requisitos__bg {
-//     background: linear-gradient(rgba($color: $white, $alpha: 0.2)), url('../media/program_bg-3.jpg') no-repeat center;
-//     background: {
-//         position: bottom;
-//         size: cover;
-//     }
-// }
+.requisitos__bg {
+    background: linear-gradient(rgba($color: $black, $alpha: 0.7)), url('../media/kuroda-5.jpg') no-repeat;
+    background: {
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+    @include responsive(l) {
+        background: {
+            image: url('../media/kuroda-2.jpg');
+            size: contain;
+            position: right;
+        }
+    }
+}
+
+.contacto__bg {
+    @include responsive(m) {
+        background: linear-gradient(rgba($color: $white, $alpha: 0.5)), url('../media/kuroda-7.jpg') no-repeat center;
+    }
+}
+
+.avatar-container {
+    display: none;
+    @include responsive(l) {
+        display: block;
+        text-align: left;
+    }
+}
+
+.avatar {
+    @include responsive(l) {
+        width: 20vh;
+    }
+}
+
+.header__bg-0 {
+    background: {
+        image: url('../media/kuroda-3.jpg');
+        position: bottom;
+    }
+}
+
+.header__bg-1 {
+    background: {
+        image: url('../media/kuroda-4.jpg');
+    }
+}
+
+.header__bg-2 {
+    background: {
+        image: url('../media/kuroda-5.jpg');
+    }
+}
+
+.header__bg-3 {
+    background: {
+        image: url('../media/kuroda-7.jpg');
+        position: center;
+    }
+}
+
+.vale-mas-logo {
+    display: none;
+    @include responsive(l) {
+        display: inline-flex;
+        width: 66%;
+    }
+}

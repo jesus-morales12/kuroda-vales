@@ -4,16 +4,12 @@ $dark-red: #A11213;
 $red: #EE3233;
 $light-red: #FF4F50;
 $dark-green: #015418;
-$light-green: #02A12E;
+$light-green: #028727;
 $black: #141414;
 $white: #FFFFFF;
-$violet: #B10A96;
-$light-violet: #CB15AD;
-$yellow: #FED001;
-$light-blue: #1AFEF1;
+$yellow: #EEFF0C;
 $dark-yellow: #B19512;
-$blue: #0101FE;
-$dark-blue: #0000B1;
+$mid-yellow: #e6cc00;
 /* SOCIAL NETWORK ICON COLORS */
 
 $fb-icon-color: #3b5998;
@@ -27,7 +23,6 @@ $m: "screen and (min-width: 768px)";
 $l: "screen and (min-width: 992px)";
 $xl: "screen and (min-width: 1400px)";
 $mobile-landscape: "screen and (min-width: 375px) and (orientation: landscape)";
-
 @mixin responsive($device) {
     @if $device==s {
         @media only #{$s} {

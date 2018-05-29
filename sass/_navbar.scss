@@ -7,17 +7,19 @@
     position: absolute;
     top: 0;
     width: 100%;
-    padding-top: 15px;
-    // @include responsive(xl) {
-    //     padding-top: 20px;
-    // }
+    z-index: 99;
+    background: {
+        color: rgba($color: $black, $alpha: 0.3);
+    }
 }
 
 // ELEMENT
 .navbar__link {
     text-decoration: none;
-    color: $black;
+    color: $white;
+    align-self: center;
     font-size: 15px;
+    padding: 8px 0;
     @include responsive(s) {
         font-size: 17px;
     }

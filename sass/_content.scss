@@ -1,23 +1,119 @@
+.header {
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: {
+        image: url('../media/kuroda-3.jpg');
+        repeat: no-repeat;
+        size: cover;
+        position: bottom;
+    }
+    @include responsive(s) {
+        background-position: center;
+    }
+    @include responsive(m) {
+        background: {
+            image: url('../media/kuroda-3.jpg');
+            position-x: center;
+            position-y: bottom;
+        }
+        min-height: 90vh;
+        align-items: flex-end;
+    }
+    @include responsive(l) {
+        min-height: 92vh;
+        justify-content: flex-start; // align-items: center;
+        background: {
+            image: url('../media/kuroda-5.jpg');
+            position: center;
+        }
+    }
+}
+
+.big-title-container {
+    width: 92%;
+    text-align: center;
+    padding-top: 9vh;
+    @include responsive(s) {
+        margin: 0;
+        width: 450px;
+        padding-top: 12vh;
+    }
+    @include responsive(m) {
+        width: 600px;
+        padding-bottom: 10vh;
+    }
+    @include responsive(l) {
+        padding: 0; // padding-bottom: 6vh;
+        width: 500px;
+    }
+}
+
+.contact__book>.avatar-container {
+    text-align: center;
+}
+
+.big-title {
+    font-size: 52px;
+    padding: 8px 0;
+    color: $white;
+    background-color: rgba($color: $black, $alpha: 0.1);
+    span {
+        color: $mid-yellow;
+    }
+    @include responsive(s) {
+        font-size: 57px;
+        padding: 10px 0;
+        background-color: rgba($color: $black, $alpha: 0.4);
+    }
+    @include responsive(m) {
+        font-size: 62px;
+        padding: 10px 12px;
+    }
+    @include responsive(l) {
+        font-size: 65px;
+        background-color: $dark-red;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom: 0 none;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+    }
+    @include responsive(xl) {
+        text-align: center;
+        font-size: 64px;
+        padding: 10px 25px;
+    }
+}
+
 %section {
     width: 100%;
     text-align: center;
-    padding: {
-        top: 20px;
-        bottom: 30px;
-    }
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    min-height: 92vh;
-    border: 1px solid black;
+    min-height: 50vh;
+    padding: {
+        top: 12px;
+    }
+    @include responsive(m) {
+        min-height: 82vh;
+    }
+    @include responsive(xl) {
+        min-height: 82vh;
+        padding: {
+            top: 20px;
+            bottom: 30px;
+            left: 8vh;
+            right: 8vh;
+        }
+    }
 }
 
 %section__titles {
-    // text-align: center;
     width: 100%;
-    align-self: flex-start;
     padding: {
-        top: 10px; // bottom: 15px;
+        bottom: 12px;
     }
     font-size: 6.8vh;
     @include responsive(s) {
@@ -39,94 +135,91 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.big-title-container {
-    // display: flex;
-    z-index: 9999;
-    width: 80%;
-    margin-top: 16vh;
-    margin-left: 15px;
-    @include responsive(s) {
-        width: 450px;
-        margin-left: 30px;
-    }
-    @include responsive(m) {
-        width: 550px;
-    }
-    @include responsive(xl) {
-        width: 650px;
-    }
-}
-
-.big-title {
-    font-size: 55px;
-    color: #000;
-    @include responsive(s) {
-        font-size: 60px;
-    }
-    @include responsive(m) {
-        font-size: 65px;
-    }
-    @include responsive(l) {
-        font-size: 75px;
-    }
-    @include responsive(xl) {
-        font-size: 80px;
-    }
+    justify-content: space-between;
 }
 
 #programa {
     @extend %section;
     background-color: #fefefe;
     justify-content: center;
+    border-bottom: 1px solid rgba($color: $black, $alpha: 0.3);
+    width: 95%;
+    margin: 0 auto;
     @include responsive(s) {}
     @include responsive(m) {
         justify-content: space-around;
+        border: none;
     }
 }
 
 #requisitos {
     @extend %section;
-    // background-color: $light-green;
+    border-bottom: 1px solid rgba($color: $black, $alpha: 0.3);
+    @include responsive(m) {
+        border: none;
+    }
+    @include responsive(xl) {
+        padding-left: 30px;
+    }
 }
 
 #contacto {
     @extend %section;
-    background-color: $black;
-}
-
-.testimonials {
-    // text-align: center;
-    padding: 12px;
-    width: 100%;
-    @include responsive(l) {
-        width: 800px;
-        padding: 0;
-    }
 }
 
 // ELEMENT
+.testimonials {
+    width: 95%;
+    margin: 0 auto;
+    @include responsive(s) {
+        width: 70%;
+    }
+    @include responsive(m) {
+        width: 45%;
+    }
+    @include responsive(l) {
+        width: 50%;
+    }
+    @include responsive(xl) {
+        margin: 0;
+        border: none;
+        color: $white;
+        background-color: rgba($color: #404040, $alpha: 0.8);
+        width: 45%;
+        padding: 12px;
+    }
+}
+
+.testimonials__title {
+    font-size: 4.6vh;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
 .testimonials__box {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    width: 600px;
-}
-
-.testimonials__title {
-    font-size: 4.6vh;
-    padding-bottom: 12px;
+    border: none;
+    @include responsive(xl) {
+        width: 80%;
+    }
 }
 
 .testimonials__text {
-    padding: 8px;
     font-size: 2.6vh;
-    text-align: justify;
+    padding: 5px;
     font: {
         style: italic;
+    }
+    text-align: justify;
+    @include responsive(xl) {
+        padding: {
+            top: 10px;
+            left: 20px;
+            right: 20px;
+        }
     }
 }
 
@@ -139,80 +232,96 @@ figcaption {
 }
 
 .program__container {
-    // text-align: center;
-    // padding-bottom: 15px;
-    width: 90%;
+    text-align: center; // padding-bottom: 15px;
     padding: {
         right: 5px;
         left: 5px;
         bottom: 15px;
     }
+    margin: 0 auto;
     @include responsive(s) {
-        width: 85%;
+        width: 50%;
     }
     @include responsive(m) {
-        // width: 220px;
         width: 30%;
-    } // @include responsive(l) {
-    //     width: 290px;
-    // }
-    // @include responsive(xl) {
-    //     width: 350px;
-    // }
+    }
 }
 
 .contact__container {
     width: 100%;
     display: flex;
     flex-wrap: wrap-reverse;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: flex-end; // padding: 0 8vh;
+}
+
+.contact__title {
+    color: $white;
+    text-align: center;
+    padding: 2px 0;
 }
 
 .contact__book {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
     text-align: justify;
-    width: 90%;
+    width: 100%;
+    padding: 12px;
     font-size: 2.8vh;
+    background-color: #b20000;
+    @include responsive(s) {
+        width: 70%;
+    }
+    @include responsive(m) {
+        width: 45%;
+    }
     @include responsive(l) {
-        width: 400px;
+        width: 33%;
+    }
+    @include responsive(xl) {
+        width: 25%;
     }
 }
 
 .program__icon {
-    font-size: 15.5vh;
+    font-size: 13.5vh;
     @include responsive(s) {
-        font-size: 16vh;
+        font-size: 14vh;
     }
     @include responsive(m) {
-        font-size: 16.5vh;
+        font-size: 14.5vh;
     }
     @include responsive(l) {
-        font-size: 17vh;
+        font-size: 15vh;
     }
     @include responsive(xl) {
-        font-size: 17.5vh;
+        font-size: 15.5vh;
     }
 }
 
 .program__big-title {
     @extend %section__titles;
-    @include responsive(l) {
-        padding-left: 8vh;
+    @include responsive(m) {
         text-align: left;
     }
 }
 
 .requirements__big-title {
     @extend %section__titles;
+    color: $white;
+    @include responsive(m) {
+        text-align: center;
+    }
     @include responsive(l) {
-        // text-align: center;
+        color: $black;
     }
 }
 
 .contact__big-title {
     @extend %section__titles;
-    @include responsive(l) {
-        padding-right: 8vh;
+    @include responsive(m) {
         text-align: right;
     }
 }
@@ -230,27 +339,25 @@ figcaption {
         top: 5px;
         bottom: 15px;
     }
-    font-size: 5.2vh;
+    font-size: 4.7vh;
     @include responsive(s) {
-        font-size: 5.4vh;
+        font-size: 5.2vh;
     }
     @include responsive(l) {
-        font-size: 5.6vh;
+        font-size: 5.4vh;
     }
     @include responsive(xl) {
-        font-size: 6vh;
+        font-size: 5.8vh;
     }
 }
 
 .program__description {
-    font-size: 2.5vh;
-    text-align: justify;
+    font-size: 2.8vh;
     @include responsive(s) {
         font-size: 2.7vh;
     }
     @include responsive(m) {
         font-size: 2.9vh;
-        text-align: center;
     }
     @include responsive(l) {
         font-size: 3.1vh;
@@ -261,9 +368,13 @@ figcaption {
 }
 
 %__overall {
-    width: 90%;
-    padding: 10px 0;
-    text-align: justify;
+    padding: 5px 0;
+    text-align: justify; // width: 90%;
+    margin: 0 auto;
+    @include responsive(xl) {
+        margin: 0;
+        width: 100%;
+    }
 }
 
 .program__overall {
@@ -271,42 +382,44 @@ figcaption {
     margin: 0 auto;
     line-height: 135%;
     font-size: 3vh;
-    @include responsive(l) {
-        // padding: 20px 8vh;
-        padding: {
-            top: 20px;
-            left: 8vh;
-            right: 8vh;
-        }
+    width: 90%;
+    @include responsive(s) {
         margin: 0;
-    }
-    @include responsive(xl) {
-        width: 85%;
+        width: auto;
     }
 }
 
 .requirements__overall {
-    @extend %__overall;
-    margin: 0 auto;
-    font-size: 3.2vh;
-    @include responsive(m) {
-        text-align: center;
-    }
+    @extend %__overall; // margin: 0 auto;
+    font-size: 3vh; // @include responsive(m) {
+    //     text-align: center;
+    // }
     @include responsive(l) {
-        width: 965px;
-        padding-top: 20px;
+        text-align: left;
     }
 }
 
 .requirements {
-    width: 85%;
-    text-align: justify;
+    width: 90%;
+    color: $white;
     margin: 0 auto;
+    text-align: justify;
     @include responsive(s) {
         width: 80%;
     }
+    @include responsive(m) {
+        margin: 0;
+        text-align: justify;
+        width: 400px;
+        padding: 5px 12px;
+        margin-left: 2.5vh;
+    }
     @include responsive(l) {
-        width: auto;
+        width: 50%;
+        color: $black;
+    }
+    @include responsive(xl) {
+        width: 75%;
     }
 }
 
@@ -315,7 +428,7 @@ figcaption {
 }
 
 .requirements__item {
-    font-size: 3.2vh;
+    font-size: 3vh;
     line-height: 120%;
     padding: 10px 0;
     @include responsive(l) {
@@ -327,8 +440,10 @@ figcaption {
 }
 
 .requirements__item>i {
+    width: 50px;
     font-size: 4vh;
     padding-right: 20px;
+    text-align: center;
     @include responsive(l) {}
     @include responsive(xl) {
         padding-right: 50px;

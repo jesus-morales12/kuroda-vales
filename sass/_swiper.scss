@@ -1,16 +1,47 @@
-.swiper-container {
+.testimonialSwiper .swiper-container {
     width: 100%;
     height: 100%;
 }
 
-.swiper-slide {
+.testimonialSwiper .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    // font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.swiper-wrapper {
+.testimonialSwiper .swiper-wrapper {
     padding-bottom: 24px;
+}
+
+.headerSwiper .swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.headerSwiper .swiper-slide {
+    min-height: 70vh;
+    background: {
+        repeat: no-repeat;
+        size: cover;
+    }
+    @include responsive(xl) {
+        min-height: 90vh;
+    }
+}
+
+.--display-small {
+    display: flex;
+    @include responsive(xl) {
+        display: none;
+    }
+}
+
+.--display-big {
+    display: none;
+    @include responsive(xl) {
+        display: flex;
+    }
 }

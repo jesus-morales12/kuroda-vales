@@ -1,0 +1,87 @@
+.hide {
+    display: none;
+}
+
+.input {
+    width: 100%;
+    padding: 3px 5px;
+    font-size: 17px;
+    border: 1px solid rgba($color: $black, $alpha: 0.15);
+    border-radius: 3px;
+}
+
+.label {
+    display: block;
+    align-self: flex-start;
+    padding-bottom: 4px;
+    font-size: 16.5px;
+}
+
+.form-container {
+    padding: {
+        top: 5px;
+        bottom: 15px;
+    }
+    @include responsive(xl) {
+        padding-bottom: 20px;
+    }
+}
+
+.form__item {
+    display: flex;
+    flex: {
+        direction: column;
+        wrap: wrap;
+    }
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+form {
+    width: 100%;
+    color: $white;
+    padding: 0 16px;
+}
+
+form>ul {
+    list-style: none;
+}
+
+.button-container {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button {
+    font: {
+        size: 17px;
+    }
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: none !important;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.--submit {
+    background-color: $light-green;
+    color: $white;
+    font: {
+        size: 20px;
+        weight: bold;
+    }
+    @include responsive(l) {
+        transition: 0.2s ease;
+    }
+}
+
+.--submit:hover {
+    @include responsive(l) {
+        transition: 0.3s ease;
+        cursor: pointer;
+        transition: 0.2s ease;
+        background-color: $dark-green;
+    }
+}

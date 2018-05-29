@@ -35,18 +35,31 @@
 </head>
 
 <body>
-    <header>
-        <div class="header__bg">
-            <nav class="navbar">
-                <a id="navbar-programa" href="#programa" class="navbar__link">PROGRAMA</a>
-                <a id="navbar-requisitos" href="#requisitos" class="navbar__link">REQUISITOS</a>
-                <a id="navbar-contacto" href="#contacto" class="navbar__link">CONTACTO</a>
-            </nav>
-
+    <header class="header">
+        <!-- <div class="swiper-container headerSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide header__bg-0 --display-small"></div>
+                <div class="swiper-slide header__bg-2 --display-big"></div>
+                <div class="swiper-slide header__bg-3 --display-big"></div>
+            </div>
             <div class="big-title-container">
-                <h1 class="big-title">Haz de tu tiempo libre un ingreso extra
+                <h1 class="big-title">
+                    Haz de tu tiempo libre 
+                    <span>un ingreso extra</span>
                 </h1>
             </div>
+        </div> -->
+        <nav class="navbar">
+            <a id="navbar-programa" href="#programa" class="navbar__link">PROGRAMA</a>
+            <a id="navbar-requisitos" href="#requisitos" class="navbar__link">REQUISITOS</a>
+            <a id="navbar-contacto" href="#contacto" class="navbar__link">CONTACTO</a>
+        </nav>
+        <div class="big-title-container">
+            <h1 class="big-title">
+                Haz de tu tiempo libre
+                <span>un ingreso extra</span>
+            </h1>
+            <img src="media/logo_valemas_2.png" alt="" class="vale-mas-logo">
         </div>
     </header>
     <div class="content">
@@ -58,7 +71,10 @@
                 <div class="program__overall">
                     Ofrece a tus conocidos, amigos o familiares
                     <b>nuestras soluciones</b> para el hogar o negocio de las mejores marcas a través de
-                    <b>Vale Más Kuroda</b>. Tus clientes podrán
+                    <b>Vale Más Kuroda</b>.
+                </div>
+                <div class="program__overall">
+                    Tus clientes podrán
                     <b>comprar a crédito y pagar a precio de contado</b>, y tú podrás:
                 </div>
             </div>
@@ -93,18 +109,18 @@
                 </div>
             </div>
 
-
         </div>
+
         <div id="requisitos" class="requisitos__bg">
 
             <h1 class="requirements__big-title">
                 REQUISITOS
             </h1>
-            <div class="requirements__overall">
-                Acude a tu sucursal más cercana y solicita tu afiliación presentando la siguiente información:
-            </div>
 
             <div class="requirements">
+                <div class="requirements__overall">
+                    Acude a tu sucursal más cercana y solicita tu afiliación presentando la siguiente información:
+                </div>
                 <ul class="requirements__list">
                     <li class="requirements__item">
                         <i class="far fa-id-card"></i>Identificación oficial (INE, licencia de conducir, pasaporte)</li>
@@ -115,18 +131,76 @@
                     <li class="requirements__item">
                         <i class="fas fa-user-check"></i>Autorización de Buró de Crédito por parte del área de Crédito de Kuroda</li>
                 </ul>
+                <div class="avatar-container">
+                    <img src="media/2.png" alt="Vale Más Kuroda" class="avatar">
+                </div>
             </div>
-
         </div>
-        <div id="contacto">
+
+        <div id="contacto" class="contacto__bg">
             <h1 class="contact__big-title">
                 CONTACTO
             </h1>
+
             <div class="contact__container">
+                <div class="contact__book">
+                    <h2 class="contact__title">¡REGÍSTRATE HOY!</h2>
+                    <div class="form-container">
+                        <form id="form296" name="form296" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data"
+                            method="post" novalidate action="https://queo.wufoo.com/forms/mbedg4g0080kve/#public">
+                            <ul>
+                                <li id="foli1" class="notranslate form__item">
+                                    <label class="label" id="title1" for="Field1">
+                                        Nombre
+                                    </label>
+                                    <input id="Field1" name="Field1" type="text" class="input" value="" tabindex="1" placeholder="" />
+                                </li>
+                                <li id="foli3" class="phone notranslate      form__item">
+                                    <label class="label" id="title3" for="Field3">
+                                        Número de teléfono
+                                    </label>
+
+                                    <input id="Field3" name="Field3" type="tel" class="input" value="" maxlength="10" tabindex="3" onkeyup="autotab(this, document.getElementById('Field3-1'), this); filterNonnumeric(this);"
+                                        onfocus="this.selectionStart = this.selectionEnd = this.value.length;" placeholder=""
+                                    />
+                                </li>
+                                <li id="foli4" class="notranslate form__item">
+                                    <label class="label" id="title4" for="Field4">
+                                        Correo electrónico
+                                    </label>
+
+                                    <input id="Field4" name="Field4" type="email" spellcheck="false" class="input" value="" maxlength="255" tabindex="6" placeholder=""
+                                    />
+
+                                </li>
+                                <li id="foli5" class="complex notranslate      form__item">
+                                    <label class="label" id="title5" for="Field5">
+                                        Ciudad
+                                    </label>
+                                    <input id="Field7" name="Field7" type="text" class="input" value="" tabindex="9" placeholder="" />
+                                </li>
+
+                                <li class="button-container">
+                                    <input id="saveForm" name="saveForm" class="button --submit" type="submit" value="Enviar" />
+                                </li>
+
+                                <li class="hide">
+                                    <label for="comment">Do Not Fill This Out</label>
+                                    <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                                    <input type="hidden" id="idstamp" name="idstamp" value="bXiyAACWywvFbWcROSYDp1ZHuNQfOalEPCgW2E9QeEw=" />
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="avatar-container">
+                        <img src="media/6.png" alt="Vale Más Kuroda" class="avatar">
+                    </div>
+                </div>
+
                 <div class="testimonials">
                     <h2 class="testimonials__title">
-                        <i class="fas fa-chart-line"></i> Historias de éxito </h2>
-                    <div class="swiper-container">
+                        Historias de éxito </h2>
+                    <div class="swiper-container testimonialSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="testimonials__box">
@@ -134,13 +208,13 @@
                                         <div class="testimonials__pic-1">
                                         </div>
                                         <figcaption>
-                                            Homero J. Simpson
+                                            Candelaria
                                         </figcaption>
                                     </figure>
                                     <div class="testimonials__text">
-                                        ¡Los libros son inútiles! Yo leí único libro en mi vida: «Matar un ruiseñor». ¡Y no me dio ninguna información sobre cómo
-                                        matar ruiseñores! Sí, es cierto que me enseñó a no juzgar a un hombre por el color
-                                        de su piel, ¿pero eso para qué me sirve?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos, officia sint veritatis sapiente exercitationem vel accusantium
+                                        nulla odit cupiditate qui obcaecati molestias vitae atque nemo, magnam quibusdam
+                                        dignissimos voluptas?
                                     </div>
                                 </div>
                             </div>
@@ -176,22 +250,14 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination swiper-pagination-black"></div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next swiper-button-black"></div>
-                        <div class="swiper-button-prev swiper-button-black"></div>
+
                     </div>
-                </div>
-                <div class="contact__book">
-                    Aquí van las formas de contacto para formar parte del programa de vales. Pueden ser teléfonos, correo electrónico, o un formulario
-                    de contacto.
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="footer footer--theme --flex --space-between">
+    <footer class="footer footer--theme">
         <!-- DESCUBRE  -->
         <div class="footer__block">
             <h4 class="footer__title">DESCUBRE</h4>
@@ -289,12 +355,13 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/wufoo.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/swiper.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
+        var swiper = new Swiper('.testimonialSwiper', {
             spaceBetween: 20,
+            slidesPerView: 1,
             autoplay: {
                 delay: 4800,
                 disableOnInteraction: false,
@@ -307,9 +374,31 @@
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
-            }
+            },
         });
+
+        // var swiper = new Swiper('.headerSwiper', {
+        //     spaceBetween: 30,
+        //     effect: 'fade',
+        //     autoplay: {
+        //         delay: 4000,
+        //         disableOnInteraction: false,
+        //     },
+        //     loop: true,
+        //     keyboard: {
+        //         enabled: true,
+        //     },
+        //     pagination: {
+        //         el: '.swiper-pagination',
+        //         clickable: true,
+        //     },
+        //     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //     },
+        // });
     </script>
+
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
