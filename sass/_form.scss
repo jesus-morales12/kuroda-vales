@@ -64,7 +64,7 @@ form>ul>li {
 .button-container {
     display: inline-flex;
     justify-content: center;
-    width: 100%;
+    width: 100%; // background-color: white;
 }
 
 .button {
@@ -75,13 +75,14 @@ form>ul>li {
     margin-top: 15px;
     border: none;
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+
     width: 100%;
     @include responsive(l) {
         width: 50%;
     }
 }
 
-.--submit {
+.submit {
     background-color: $light-green;
     color: $white;
     font: {
@@ -93,7 +94,7 @@ form>ul>li {
     }
 }
 
-.--submit:hover {
+.submit:hover {
     @include responsive(l) {
         transition: 0.3s ease;
         cursor: pointer;
@@ -101,3 +102,7 @@ form>ul>li {
         background-color: $dark-green;
     }
 }
+
+// input[type=submit] {
+//     background-color: black;
+// }

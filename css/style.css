@@ -47,15 +47,18 @@
   align-content: center;
   position: absolute;
   top: 0;
-  left: 0;
-  background-color: rgba(20, 20, 20, 0.3); }
+  left: 0; }
 
 .navbar__link {
   text-decoration: none;
   color: #FFFFFF;
+  background-color: rgba(20, 20, 20, 0.65);
   align-self: center;
   font-size: 20px;
-  padding: 8px 0; }
+  padding: 8px 16px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 0 1px rgba(34, 25, 25, 0.4); }
 
 .testimonials__pic-1, .testimonials__pic-2, .testimonials__pic-3 {
   height: 30vh;
@@ -76,8 +79,8 @@
       height: 42vh; } }
 
 .testimonials__pic-1 {
-  background-image: url("../media/kuroda-5.jpg");
-  background-position: top; }
+  background-image: url("../media/kuroda-11.jpg");
+  background-position: center; }
 .testimonials__pic-2 {
   background-image: url("https://i.imgur.com/UgESOEt.png"); }
 .testimonials__pic-3 {
@@ -92,7 +95,7 @@
 
 @media only screen and (min-width: 992px) {
   .requisitos__bg {
-    background-image: url("../media/kuroda-2.jpg");
+    background-image: url("../media/kuroda-10.jpg");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat; } }
@@ -104,8 +107,12 @@
       display: block;
       text-align: center; } }
 
-.avatar {
-  width: 45%; }
+@media only screen and (min-width: 992px) {
+  .avatar {
+    width: 125px; } }
+@media only screen and (min-width: 1400px) {
+  .avatar {
+    width: 35%; } }
 
 .header__bg-0 {
   background-image: url("../media/kuroda-3.jpg");
@@ -194,17 +201,17 @@ form > ul {
     .button {
       width: 50%; } }
 
-.--submit {
+.submit {
   background-color: #028727;
   color: #FFFFFF;
   font-size: 18px;
   font-weight: bold; }
   @media only screen and (min-width: 992px) {
-    .--submit {
+    .submit {
       transition: 0.2s ease; } }
 
 @media only screen and (min-width: 992px) {
-  .--submit:hover {
+  .submit:hover {
     transition: 0.3s ease;
     cursor: pointer;
     transition: 0.2s ease;
@@ -226,14 +233,13 @@ form > ul {
       align-items: center; } }
   @media only screen and (min-width: 768px) {
     .header {
-      background-image: url("../media/kuroda-3.jpg");
       background-position: center;
       min-height: 80vh; } }
   @media only screen and (min-width: 992px) {
     .header {
-      min-height: 92vh;
+      min-height: 90vh;
       justify-content: flex-start;
-      background-image: url("../media/kuroda-5.jpg");
+      background-image: url("../media/kuroda-9.jpg");
       background-position: center;
       align-items: flex-end; } }
 
@@ -291,8 +297,7 @@ form > ul {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  min-height: 50vh;
-  border: 1px solid black; }
+  min-height: 50vh; }
   @media only screen and (min-width: 768px) {
     #programa, #requisitos, #contacto {
       min-height: 70vh; } }
@@ -328,7 +333,7 @@ form > ul {
   justify-content: space-between; }
 
 #programa {
-  background-color: #fefefe;
+  color: #141414;
   justify-content: center;
   margin: 0 auto; }
   @media only screen and (min-width: 768px) {
@@ -376,9 +381,9 @@ form > ul {
 
 .testimonials__text {
   text-align: justify;
+  color: #141414;
   font-size: 2.7vh;
-  padding: 5px;
-  font-style: italic; }
+  padding: 5px; }
   @media only screen and (min-width: 576px) {
     .testimonials__text {
       font-size: 4.2vh; } }
@@ -387,7 +392,8 @@ form > ul {
       font-size: 2.4vh; } }
   @media only screen and (min-width: 992px) {
     .testimonials__text {
-      font-size: 2.6vh; } }
+      font-size: 2.6vh;
+      font-weight: 500; } }
   @media only screen and (min-width: 1400px) {
     .testimonials__text {
       padding-top: 10px;
@@ -457,7 +463,7 @@ figcaption {
   @media only screen and (min-width: 992px) {
     .contact__book {
       margin: 0;
-      width: 40%; } }
+      width: 350px; } }
   @media only screen and (min-width: 1400px) {
     .contact__book {
       width: 25%; } }

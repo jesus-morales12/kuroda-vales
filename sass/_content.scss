@@ -16,16 +16,15 @@
     }
     @include responsive(m) {
         background: {
-            image: url('../media/kuroda-3.jpg');
             position: center;
         }
         min-height: 80vh;
     }
     @include responsive(l) {
-        min-height: 92vh;
+        min-height: 90vh;
         justify-content: flex-start; // align-items: center;
         background: {
-            image: url('../media/kuroda-5.jpg');
+            image: url('../media/kuroda-9.jpg');
             position: center;
         }
         align-items: flex-end;
@@ -92,7 +91,6 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 50vh;
-    border: 1px solid black;
     @include responsive(m) {
         min-height: 70vh;
     }
@@ -137,7 +135,7 @@
 
 #programa {
     @extend %section;
-    background-color: #fefefe;
+    color: $black;
     justify-content: center;
     margin: 0 auto;
     @include responsive(s) {}
@@ -198,11 +196,9 @@
 
 .testimonials__text {
     text-align: justify;
+    color: $black;
     font-size: 2.7vh;
     padding: 5px;
-    font: {
-        style: italic;
-    }
     @include responsive(s) {
         font-size: 4.2vh;
     }
@@ -211,6 +207,7 @@
     }
     @include responsive(l) {
         font-size: 2.6vh;
+        font-weight:500;
     }
     @include responsive(xl) {
         padding: {
@@ -219,6 +216,7 @@
             right: 20px;
         }
         font-size: 2.8vh;
+        
     }
 }
 
@@ -295,7 +293,7 @@ figcaption {
     }
     @include responsive(l) {
         margin: 0;
-        width: 40%;
+        width: 350px;
     }
     @include responsive(xl) {
         width: 25%;
