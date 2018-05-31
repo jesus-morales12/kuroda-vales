@@ -11,13 +11,19 @@
         position: bottom;
     }
     @include responsive(s) {
-        background-position: center;
+        background: {
+            position: center;
+            image: url('../media/kuroda-15.jpg');
+        }
+        justify-content: flex-end;
         align-items: center;
     }
     @include responsive(m) {
         background: {
             position: center;
+            image: url('../media/kuroda-4.jpg');
         }
+        justify-content: center;
         min-height: 80vh;
     }
     @include responsive(l) {
@@ -37,14 +43,16 @@
     padding-top: 9vh;
     @include responsive(s) {
         margin: 0;
-        width: 80%;
+        padding: 0;
+        width: 35%;
+        text-align: right;
     }
     @include responsive(m) {
         width: 650px;
         padding: {
-            top: 0;
-            bottom: 5vh;
+            bottom: 8vh;
         }
+        text-align: center;
     }
     @include responsive(l) {
         width: 400px;
@@ -64,12 +72,14 @@
         color: $mid-yellow;
     }
     @include responsive(s) {
-        padding: 10px 0;
-        background-color: rgba($color: $black, $alpha: 0.4);
+        font-size: 45px;
+        padding: 0 8px 0 0;
+        background-color: rgba($color: $black, $alpha: 0.6);
     }
     @include responsive(m) {
         font-size: 62px;
         padding: 10px 12px;
+        background-color: rgba($color: $black, $alpha: 0.4);
     }
     @include responsive(l) {
         font-size: 50px;
@@ -156,6 +166,9 @@
 
 #contacto {
     @extend %section;
+    @include responsive(m) {
+        height: 95vh;
+    }
 }
 
 // ELEMENT
@@ -243,10 +256,11 @@ figcaption {
 }
 
 .contact__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+    @include responsive(m) {
+        width: 70%;
+    }
     @include responsive(l) {
         width: 500px;
     }
@@ -275,7 +289,6 @@ figcaption {
 }
 
 .contact__book {
-    margin: 0 auto;
     width: 100%;
     padding: 12px;
     font-size: 2.8vh;
@@ -301,7 +314,6 @@ figcaption {
     width: 90%;
     margin: 0 auto;
     color: $black;
-
     @include responsive(l) {
         margin: 0;
         width: 100%;
@@ -462,9 +474,7 @@ figcaption {
     color: $black;
     text-align: justify;
     @include responsive(s) {}
-    @include responsive(m) {
-        //     padding: 5px 12px;
-    }
+    @include responsive(m) {}
     @include responsive(l) {
         width: 60%; // color: $black;
     }

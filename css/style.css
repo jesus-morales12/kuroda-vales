@@ -103,6 +103,16 @@
     background-position: right;
     background-repeat: no-repeat; } }
 
+@media only screen and (min-width: 768px) {
+  .contacto__bg {
+    background: linear-gradient(rgba(255, 255, 255, 0.4)), url("../media/kuroda-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top; } }
+@media only screen and (min-width: 992px) {
+  .contacto__bg {
+    background-position: center; } }
+
 .avatar-container {
   display: none; }
   @media only screen and (min-width: 992px) {
@@ -239,10 +249,14 @@ form > span {
   @media only screen and (min-width: 576px) {
     .header {
       background-position: center;
+      background-image: url("../media/kuroda-15.jpg");
+      justify-content: flex-end;
       align-items: center; } }
   @media only screen and (min-width: 768px) {
     .header {
       background-position: center;
+      background-image: url("../media/kuroda-4.jpg");
+      justify-content: center;
       min-height: 80vh; } }
   @media only screen and (min-width: 992px) {
     .header {
@@ -259,12 +273,14 @@ form > span {
   @media only screen and (min-width: 576px) {
     .big-title-container {
       margin: 0;
-      width: 80%; } }
+      padding: 0;
+      width: 35%;
+      text-align: right; } }
   @media only screen and (min-width: 768px) {
     .big-title-container {
       width: 650px;
-      padding-top: 0;
-      padding-bottom: 5vh; } }
+      padding-bottom: 8vh;
+      text-align: center; } }
   @media only screen and (min-width: 992px) {
     .big-title-container {
       width: 400px;
@@ -282,12 +298,14 @@ form > span {
     color: #e6cc00; }
   @media only screen and (min-width: 576px) {
     .big-title {
-      padding: 10px 0;
-      background-color: rgba(20, 20, 20, 0.4); } }
+      font-size: 45px;
+      padding: 0 8px 0 0;
+      background-color: rgba(20, 20, 20, 0.6); } }
   @media only screen and (min-width: 768px) {
     .big-title {
       font-size: 62px;
-      padding: 10px 12px; } }
+      padding: 10px 12px;
+      background-color: rgba(20, 20, 20, 0.4); } }
   @media only screen and (min-width: 992px) {
     .big-title {
       font-size: 50px;
@@ -355,6 +373,10 @@ form > span {
     #requisitos {
       padding-left: 30px; } }
 
+@media only screen and (min-width: 768px) {
+  #contacto {
+    height: 95vh; } }
+
 .testimonials__box {
   display: flex;
   flex-wrap: wrap;
@@ -400,10 +422,11 @@ figcaption {
       font-size: 22px; } }
 
 .contact__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
+  margin: 0 auto;
+  width: 95%; }
+  @media only screen and (min-width: 768px) {
+    .contact__container {
+      width: 70%; } }
   @media only screen and (min-width: 992px) {
     .contact__container {
       width: 500px; } }
@@ -428,7 +451,6 @@ figcaption {
       font-size: 4.6vh; } }
 
 .contact__book {
-  margin: 0 auto;
   width: 100%;
   padding: 12px;
   font-size: 2.8vh;

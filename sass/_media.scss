@@ -58,9 +58,7 @@
 //         position: top;
 //     }
 // }
-
 // .parallax-container {
-
 //     width: 100%;
 //     background: {
 //         size: cover;
@@ -82,7 +80,6 @@
 //         }
 //     }
 // }
-
 .requisitos__bg {
     // background: linear-gradient(rgba($color: $black, $alpha: 0.7)), url('../media/kuroda-5.jpg') no-repeat;
     // background: {
@@ -100,14 +97,21 @@
     }
 }
 
-// .contacto__bg {
-//    background: {
-//        image: url('../media/kuroda-13.jpg');
-//        repeat: no-repeat;
-//        size: cover;
-//        position: center;
-//    }
-// }
+.contacto__bg {
+    @include responsive(m) {
+        background: linear-gradient(rgba($color: $white, $alpha: 0.4)), url('../media/kuroda-3.jpg');
+        background: {
+            repeat: no-repeat;
+            size: cover;
+            position: top
+        }
+    }
+    @include responsive(l) {
+        background: {
+            position: center
+        }
+    }
+}
 
 .avatar-container {
     display: none;
