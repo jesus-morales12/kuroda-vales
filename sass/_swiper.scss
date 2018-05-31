@@ -4,11 +4,13 @@
 }
 
 .testimonialSwiper .swiper-slide {
-    text-align: center;
-    // font-size: 18px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    @include responsive(s) {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    }
 }
 
 .testimonialSwiper .swiper-wrapper {
