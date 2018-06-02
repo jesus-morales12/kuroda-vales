@@ -1,0 +1,54 @@
+// BLOCK
+.contact {
+    width: 95%;
+    margin: 0 auto;
+    padding: 12px;
+    font-size: 2.8vh;
+    background-color: #b20000;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+// ELEMENT
+.contact__title {
+    text-align: center;
+    padding: 2px 0;
+    font: {
+        size: 4.2vh;
+        weight: bold;
+    }
+    color: $white;
+}
+
+// MOD
+#contact {
+    align-content: flex-start;
+    @include responsive(m) {
+        border: none;
+        height: 95vh;
+    }
+}
+
+.contact--responsive {
+    @include responsive(m) {
+        width: 70%;
+    }
+    @include responsive(l) {
+        width: 500px;
+    }
+}
+
+.contact__title--responsive {
+    @include responsive(s) {
+        font-size: 5.8vh;
+    }
+    @include responsive(m) {
+        font-size: 4.2vh;
+    }
+    @include responsive(l) {
+        font-size: 4.4vh;
+    }
+    @include responsive(xl) {
+        font-size: 4.6vh;
+    }
+}

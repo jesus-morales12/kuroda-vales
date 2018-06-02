@@ -9,42 +9,11 @@
     align-items: flex-start;
     height: auto;
     @include responsive(s) {
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba($color: $black, $alpha: 0.1);
+        box-shadow: 0px 2px 4px rgba($color: $black, $alpha: .18);
     }
 }
 
 .testimonialSwiper .swiper-wrapper {
     padding-bottom: 24px;
-}
-
-.headerSwiper .swiper-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.headerSwiper .swiper-slide {
-    min-height: 70vh;
-    background: {
-        repeat: no-repeat;
-        size: cover;
-    }
-    @include responsive(xl) {
-        min-height: 90vh;
-    }
-}
-
-.--display-small {
-    display: flex;
-    @include responsive(xl) {
-        display: none;
-    }
-}
-
-.--display-big {
-    display: none;
-    @include responsive(xl) {
-        display: flex;
-    }
 }

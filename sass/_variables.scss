@@ -22,7 +22,6 @@ $s: "screen and (min-width: 576px)";
 $m: "screen and (min-width: 768px)";
 $l: "screen and (min-width: 992px)";
 $xl: "screen and (min-width: 1400px)";
-$mobile-landscape: "screen and (min-width: 375px) and (orientation: landscape)";
 @mixin responsive($device) {
     @if $device==s {
         @media only #{$s} {
@@ -41,11 +40,6 @@ $mobile-landscape: "screen and (min-width: 375px) and (orientation: landscape)";
     }
     @else if $device==xl {
         @media only #{$xl} {
-            @content;
-        }
-    }
-    @else if $device==mobile-landscape {
-        @media only #{$mobile-landscape} {
             @content;
         }
     }

@@ -1,6 +1,5 @@
 %testimonials__pic {
     height: 35vh;
-    width: 100%;
     background: {
         repeat: no-repeat;
         size: cover;
@@ -24,6 +23,43 @@
     }
 }
 
+%big-banner__img {
+    background: {
+        image: url('../media/kuroda-4.jpg');
+        repeat: no-repeat;
+        size: cover;
+        position: bottom;
+    }
+    @include responsive(s) {
+        background: {
+            position: center;
+            image: url('../media/kuroda-15.jpg');
+        }
+    }
+    @include responsive(m) {
+        background: {
+            position: center;
+            image: url('../media/kuroda-4.jpg');
+        }
+        justify-content: center;
+        min-height: 80vh;
+    }
+    @include responsive(l) {
+        min-height: 90vh;
+        justify-content: flex-start;
+        align-items: center;
+        background: {
+            image: url('../media/kuroda-9.jpg');
+            position: center;
+        }
+    }
+}
+
+.kuroda-logo {
+    width: 16vh;
+    padding-left: 15px;
+}
+
 .testimonials__pic {
     &-1 {
         @extend %testimonials__pic;
@@ -35,13 +71,16 @@
     &-2 {
         @extend %testimonials__pic;
         background: {
-            image: url('https://i.imgur.com/UgESOEt.png'); // position: center;
+            image: url('../media/1.png'); // position: center;
+            size: contain;
+            
         }
     }
     &-3 {
         @extend %testimonials__pic;
         background: {
-            image: url('http://www.foodrepublic.com/wp-content/uploads/2014/01/antonego.jpg'); // position: center;
+            image: url('../media/2.png');
+            size: contain;
         }
     }
 }
@@ -56,42 +95,7 @@
     @include responsive(xl) {}
 }
 
-// .programa__bg {
-//     background: linear-gradient(rgba($color: $black, $alpha: 0.65)), url('../media/kuroda-15.jpg') no-repeat;
-//     background: {
-//         size: cover;
-//         position: top;
-//     }
-// }
-// .parallax-container {
-//     width: 100%;
-//     background: {
-//         size: cover;
-//         repeat: no-repeat;
-//         attachment: fixed;
-//     }
-//     &__bg-1 {
-//         height: 30vh;
-//         background: {
-//             image: url('../media/kuroda-15.jpg');
-//             position: center;
-//         }
-//     }
-//     &__bg-2 {
-//         height: 20vh;
-//         background: {
-//             image: url('../media/kuroda-3.jpg');
-//             position: center;
-//         }
-//     }
-// }
 .requisitos__bg {
-    // background: linear-gradient(rgba($color: $black, $alpha: 0.7)), url('../media/kuroda-5.jpg') no-repeat;
-    // background: {
-    //     position: center;
-    //     size: cover;
-    //     repeat: no-repeat;
-    // }
     @include responsive(l) {
         background: {
             image: url('../media/kuroda-10.jpg');
@@ -113,51 +117,9 @@
     }
     @include responsive(l) {
         background: {
-            position: center
+            position: center;
+            attachment: fixed;
         }
-    }
-}
-
-.avatar-container {
-    display: none;
-    @include responsive(l) {
-        display: block;
-        text-align: center;
-    }
-}
-
-.avatar {
-    @include responsive(l) {
-        width: 125px;
-    }
-    @include responsive(xl) {
-        width: 35%;
-    }
-}
-
-.header__bg-0 {
-    background: {
-        image: url('../media/kuroda-3.jpg');
-        position: bottom;
-    }
-}
-
-.header__bg-1 {
-    background: {
-        image: url('../media/kuroda-4.jpg');
-    }
-}
-
-.header__bg-2 {
-    background: {
-        image: url('../media/kuroda-5.jpg');
-    }
-}
-
-.header__bg-3 {
-    background: {
-        image: url('../media/kuroda-7.jpg');
-        position: center;
     }
 }
 

@@ -1,0 +1,64 @@
+// BLOCK
+.requirements {
+    color: $black;
+    text-align: justify;
+    @include responsive(s) {}
+    @include responsive(m) {}
+    @include responsive(l) {
+        width: 60%; // color: $black;
+    }
+    @include responsive(xl) {
+        width: 65%;
+    }
+}
+
+// ELEMENT
+.requirements__list {
+    list-style: none;
+}
+
+.requirements__item {
+    font-size: 2.9vh;
+    line-height: 140%;
+    padding: 10px 0;
+}
+
+.requirements__item>i {
+    width: 50px;
+    font-size: 4vh;
+    padding-right: 20px;
+    text-align: center;
+}
+
+// MOD
+#requirements {
+    align-content: flex-start;
+}
+
+.requirements__item--responsive {
+    @include responsive(s) {
+        font-size: 5vh;
+    }
+    @include responsive(m) {
+        padding: 15px 0;
+        font-size: 3vh;
+    }
+    @include responsive(l) {
+        padding: 12px 0;
+        font-size: 3.3vh;
+    }
+    @include responsive(xl) {
+        padding: 8px 0;
+        font-size: 3.5vh;
+    }
+}
+
+.requirements__item>i {
+    @include responsive(m) {
+        width: 80px;
+        padding-right: 40px;
+    }
+    @include responsive(xl) {
+        padding-right: 50px;
+    }
+}

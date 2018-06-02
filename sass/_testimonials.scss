@@ -1,0 +1,62 @@
+// BLOCK
+.testimonials {
+    padding: 8px 12px;
+    width: 100%;
+}
+
+figcaption {
+    font: {
+        weight: bold;
+        size: 3.2vh;
+    }
+    padding: {
+        top: 12px;
+        bottom: 3px;
+    }
+    text-align: center;
+}
+
+// ELEMENT
+.testimonials__text {
+    text-align: justify;
+    color: $black;
+    font: {
+        size: 2.7vh;
+        style: italic;
+    }
+    width: 100%;
+}
+
+// MOD
+.testimonials__text--responsive {
+    @include responsive(s) {
+        font-size: 4.2vh;
+    }
+    @include responsive(m) {
+        font-size: 2.4vh;
+    }
+    @include responsive(l) {
+        font-size: 2.6vh;
+        font-weight: 500;
+    }
+    @include responsive(xl) {
+        font-size: 2.8vh;
+    }
+}
+
+figcaption {
+    @include responsive(s) {
+        font-size: 5.2vh;
+    }
+    @include responsive(m) {
+        font-size: 26px;
+    }
+    @include responsive(l) {
+        font-size: 20px;
+    }
+    @include responsive(xl) {
+        font: {
+            size: 22px;
+        }
+    }
+}

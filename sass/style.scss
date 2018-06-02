@@ -1,9 +1,13 @@
 @import 'variables';
-@import 'swiper';
-@import 'navbar';
 @import 'media';
+@import 'swiper';
 @import 'form';
-@import 'content';
+@import 'navbar';
+@import 'section';
+@import 'program';
+@import 'requirements';
+@import 'testimonials';
+@import 'contact';
 @import 'footer';
 * {
     padding: 0;
@@ -13,17 +17,25 @@
     font-family: 'Lato', sans-serif;
 }
 
-html,
 body {
-    height: 100%;
+    position: relative;
 }
 
-body {
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#my-page {
     display: flex;
     flex-direction: column;
-    -webkit-text-size-adjust: 100%;
+    min-height: 100vh;
 }
 
-.content {
-    flex: 1 0 auto;
+#my-content {
+    flex: 1;
+}
+
+#my-menu:not( .mm-menu) {
+    display: none;
 }

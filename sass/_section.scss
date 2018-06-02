@@ -1,0 +1,77 @@
+// BLOCK
+.section {
+    @extend %flex;
+    width: 90%;
+    min-height: 50vh;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    border-top: 1px solid rgba($color: $black, $alpha: 0.1);
+}
+
+// ELEMENT
+.section__title {
+    width: 100%;
+    padding: {
+        top: 12px;
+        bottom: 16px;
+    }
+    text-align: center;
+    font-size: 6.6vh;
+}
+
+.section__overall {
+    padding: 8px 0;
+    text-align: center;
+    font-size: 2.9vh;
+    line-height: 135%;
+}
+
+// MOD
+.section--responsive {
+    @include responsive(m) {
+        min-height: 70vh;
+    }
+    @include responsive(l) {
+        margin: 0;
+        width: 100%;
+        min-height: 80vh;
+        padding: {
+            left: 5vh;
+            right: 5vh;
+        }
+    }
+}
+
+.section__title--responsive {
+    @include responsive(s) {
+        font-size: 10vh;
+    }
+    @include responsive(m) {
+        font-size: 6.8vh;
+    }
+    @include responsive(l) {
+        text-align: left;
+        font-size: 7vh;
+    }
+    @include responsive(xl) {
+        font-size: 7.2vh;
+    }
+}
+
+.section__overall--responsive {
+    @include responsive(s) {
+        font-size: 5vh;
+    }
+    @include responsive(m) {
+        text-align: justify;
+        font-size: 3vh;
+    }
+    @include responsive(l) {
+        font-size: 3.3vh;
+        text-align: justify;
+    }
+    @include responsive(xl) {
+        margin: 0;
+        font-size: 3.5vh;
+    }
+}

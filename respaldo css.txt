@@ -1,0 +1,91 @@
+@import 'variables';
+@import 'swiper';
+@import 'navbar';
+@import 'media';
+@import 'form';
+@import 'content';
+@import 'footer';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    -webkit-text-size-adjust: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+#my-menu:not( .mm-menu ) {
+    display: none;
+ }
+
+
+
+// BLOCK
+
+
+#requisitos {
+    @extend %section; // flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @include responsive(xl) {
+        padding-left: 30px;
+    }
+}
+
+#contacto {
+    @extend %section;
+    @include responsive(m) {
+        border: none;
+        height: 95vh;
+    }
+}
+
+// ELEMENT
+
+
+
+
+
+
+
+
+
+.requirements__big-title {
+    @extend %section__titles;
+}
+
+.contact__big-title {
+    @extend %section__titles; // text-align: center;
+}
+
+
+
+.requirements__overall {
+    @extend %__overall;
+    padding-bottom: 15px;
+    @include responsive(l) {}
+}
+
+
+
+
+
+
+
+// MOD
+
+// BLOCK
