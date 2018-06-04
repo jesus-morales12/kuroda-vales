@@ -48,10 +48,7 @@ body {
 
 #contacto {
     @extend %section;
-    @include responsive(m) {
-        border: none;
-        height: 95vh;
-    }
+
 }
 
 // ELEMENT

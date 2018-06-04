@@ -67,7 +67,7 @@
 
 .navbar__mobile {
     font: {
-        size: 15px;
+        size: 16px;
         weight: bolder;
     }
     margin-right: 16px;
@@ -122,6 +122,9 @@
 
 .big-banner__title--theme {
     @include responsive(s) {
+        font-size: 11.8vh;
+        text-align: center;
+        padding: 5px 0;
         background-color: rgba($color: $black, $alpha: 0.6);
     }
     @include responsive(m) {
@@ -147,7 +150,7 @@
     @include responsive(s) {
         margin: 0;
         padding: 0;
-        width: 35%;
+        width: 40%;
         text-align: right;
     }
     @include responsive(m) {

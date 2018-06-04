@@ -56,8 +56,18 @@
 }
 
 .kuroda-logo {
-    width: 16vh;
+    width: 20vh;
     padding-left: 15px;
+    @include responsive(s) {
+        width: 32vh;
+    }
+    @include responsive(m) {
+        width: 14vh;
+    }
+    @include responsive(l) {
+        width: 16vh;
+    }
+    @include responsive(xl) {}
 }
 
 .testimonials__pic {
@@ -73,7 +83,6 @@
         background: {
             image: url('../media/1.png'); // position: center;
             size: contain;
-            
         }
     }
     &-3 {

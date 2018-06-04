@@ -17,3 +17,9 @@
 .testimonialSwiper .swiper-wrapper {
     padding-bottom: 24px;
 }
+
+.is-visible {
+    @include responsive(l) {
+        display: none;
+    }
+}
