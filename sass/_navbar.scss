@@ -46,19 +46,19 @@
         .navbar__social-network {
             padding: 8px;
             font-size: 18px;
-            &.--youtube {
+            &.youtube--color {
                 color: $youtube-icon-color;
             }
-            &.--facebook {
+            &.facebook--color {
                 color: $fb-icon-color;
             }
-            &.--twitter {
+            &.twitter--color {
                 color: $twitter-icon-color;
             }
-            &.--instagram {
+            &.instagram--color {
                 color: $instagram-icon-color;
             }
-            &.--radio {
+            &.radio--color {
                 color: $light-green;
             }
         }

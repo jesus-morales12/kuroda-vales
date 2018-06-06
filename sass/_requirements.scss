@@ -5,7 +5,7 @@
     @include responsive(s) {}
     @include responsive(m) {}
     @include responsive(l) {
-        width: 60%; // color: $black;
+        width: 58%; // color: $black;
     }
     @include responsive(xl) {
         width: 65%;

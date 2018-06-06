@@ -117,17 +117,20 @@
 
 .contacto__bg {
     @include responsive(m) {
-        background: linear-gradient(rgba($color: $white, $alpha: 0.4)), url('../media/kuroda-3.jpg');
+        background: linear-gradient(rgba($color: $white, $alpha: 0.5)), url('../media/kuroda-4.jpg');
         background: {
             repeat: no-repeat;
             size: cover;
-            position: top
+            position: top;
         }
     }
     @include responsive(l) {
+        background: linear-gradient(rgba($color: $white, $alpha: 0.5)), url('../media/kuroda-3.jpg');
         background: {
+            repeat: no-repeat;
+            size: cover;
             position: center;
-            attachment: fixed;
+            // attachment: fixed;
         }
     }
 }

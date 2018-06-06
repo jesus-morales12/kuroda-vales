@@ -85,14 +85,16 @@
 
 @media only screen and (min-width: 768px) {
   .contacto__bg {
-    background: linear-gradient(rgba(255, 255, 255, 0.4)), url("../media/kuroda-3.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.5)), url("../media/kuroda-4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top; } }
 @media only screen and (min-width: 992px) {
   .contacto__bg {
-    background-position: center;
-    background-attachment: fixed; } }
+    background: linear-gradient(rgba(255, 255, 255, 0.5)), url("../media/kuroda-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; } }
 
 .vale-mas-logo {
   display: none; }
@@ -151,10 +153,12 @@
       font-size: 2.6vh; } }
 
 .form-container {
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  background-color: #b20000;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3); }
   @media only screen and (min-width: 992px) {
     .form-container {
-      padding: 0; } }
+      padding-bottom: 18px; } }
 
 .form__item {
   display: flex;
@@ -248,15 +252,15 @@ form > span {
       .navbar__social .navbar__social-network {
         padding: 8px;
         font-size: 18px; }
-        .navbar__social .navbar__social-network.--youtube {
+        .navbar__social .navbar__social-network.youtube--color {
           color: #FF0000; }
-        .navbar__social .navbar__social-network.--facebook {
+        .navbar__social .navbar__social-network.facebook--color {
           color: #3b5998; }
-        .navbar__social .navbar__social-network.--twitter {
+        .navbar__social .navbar__social-network.twitter--color {
           color: #0084b4; }
-        .navbar__social .navbar__social-network.--instagram {
+        .navbar__social .navbar__social-network.instagram--color {
           color: #9b6954; }
-        .navbar__social .navbar__social-network.--radio {
+        .navbar__social .navbar__social-network.radio--color {
           color: #028727; } }
 
 .navbar__mobile {
@@ -356,9 +360,8 @@ form > span {
 .section__title {
   width: 100%;
   padding-top: 12px;
-  padding-bottom: 16px;
   text-align: center;
-  font-size: 6.6vh; }
+  font-size: 6vh; }
 
 .section__overall {
   padding: 8px 0;
@@ -418,12 +421,12 @@ form > span {
   margin: 5px auto; }
 
 .program__icon {
-  font-size: 11vh;
+  font-size: 9vh;
   color: #b20000; }
 
 .program__title {
   padding-top: 5px;
-  font-size: 4.7vh;
+  font-size: 4.5vh;
   line-height: 100%;
   padding-bottom: 8px;
   color: #A11213; }
@@ -489,7 +492,7 @@ form > span {
   text-align: justify; }
   @media only screen and (min-width: 992px) {
     .requirements {
-      width: 60%; } }
+      width: 58%; } }
   @media only screen and (min-width: 1400px) {
     .requirements {
       width: 65%; } }
@@ -585,30 +588,90 @@ figcaption {
   margin: 0 auto;
   padding: 12px;
   font-size: 2.8vh;
-  background-color: #b20000;
-  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px; }
 
 .contact__title {
   text-align: center;
-  padding: 2px 0;
+  padding-top: 12px;
+  padding-bottom: 2px;
   font-size: 4.2vh;
   font-weight: bold;
   color: #FFFFFF; }
 
+.contact__book {
+  margin-bottom: 15px; }
+
+.contact__book > ul {
+  list-style: none; }
+
+.contact__subtitle {
+  padding-bottom: 5px;
+  font-size: 3.5vh; }
+
+.contact__mean {
+  text-decoration: none;
+  color: #141414;
+  display: inline-block;
+  font-size: 2.8vh;
+  padding: 3px 0; }
+
+@media only screen and (min-width: 576px) {
+  .contact__subtitle {
+    font-size: 7vh; } }
+@media only screen and (min-width: 768px) {
+  .contact__subtitle {
+    font-size: 3.6vh; } }
+@media only screen and (min-width: 992px) {
+  .contact__subtitle {
+    font-size: 3.8vh; } }
+@media only screen and (min-width: 1400px) {
+  .contact__subtitle {
+    font-size: 4vh; } }
+
+@media only screen and (min-width: 576px) {
+  .contact__mean {
+    font-size: 4.6vh;
+    padding: 5px 0; } }
+@media only screen and (min-width: 768px) {
+  .contact__mean {
+    font-size: 2.8vh; } }
+@media only screen and (min-width: 992px) {
+  .contact__mean {
+    font-size: 2.9vh; } }
+@media only screen and (min-width: 1400px) {
+  .contact__mean {
+    font-size: 3.1vh; } }
+
 #contact {
-  align-content: flex-start; }
+  align-content: flex-start;
+  width: 100%; }
   @media only screen and (min-width: 768px) {
     #contact {
       border: none;
-      height: 95vh; } }
+      height: 95vh;
+      padding: 0; } }
+  @media only screen and (min-width: 992px) {
+    #contact {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start; } }
 
+@media only screen and (min-width: 992px) {
+  #contact > .section__title {
+    padding-left: 5vh; } }
+
+@media only screen and (min-width: 576px) {
+  .contact--responsive {
+    width: 80%; } }
 @media only screen and (min-width: 768px) {
   .contact--responsive {
     width: 70%; } }
 @media only screen and (min-width: 992px) {
   .contact--responsive {
-    width: 500px; } }
+    margin: 0;
+    width: 500px;
+    padding-left: 5vh;
+    padding-right: 5vh; } }
 
 @media only screen and (min-width: 576px) {
   .contact__title--responsive {
