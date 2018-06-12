@@ -87,17 +87,12 @@
     width: 100%;
     @include responsive(m) {
         border: none;
-        height: 95vh;
+        min-height: 95vh;
         padding: 0;
-    }
-    @include responsive(l) {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
     }
 }
 
-#contact > .section__title {
+#contact>.section__title {
     @include responsive(l) {
         padding-left: 5vh;
     }
@@ -116,6 +111,7 @@
         padding: {
             left: 5vh;
             right: 5vh;
+            bottom: 5vh;
         }
     }
 }

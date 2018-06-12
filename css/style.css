@@ -85,12 +85,20 @@
 
 @media only screen and (min-width: 768px) {
   .contacto__bg {
+    background-image: url("../media/kuroda-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
     background: linear-gradient(rgba(255, 255, 255, 0.5)), url("../media/kuroda-4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top; } }
 @media only screen and (min-width: 992px) {
   .contacto__bg {
+    background-image: url("../media/kuroda-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background: linear-gradient(rgba(255, 255, 255, 0.5)), url("../media/kuroda-3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -648,13 +656,8 @@ figcaption {
   @media only screen and (min-width: 768px) {
     #contact {
       border: none;
-      height: 95vh;
+      min-height: 95vh;
       padding: 0; } }
-  @media only screen and (min-width: 992px) {
-    #contact {
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start; } }
 
 @media only screen and (min-width: 992px) {
   #contact > .section__title {
@@ -671,7 +674,8 @@ figcaption {
     margin: 0;
     width: 500px;
     padding-left: 5vh;
-    padding-right: 5vh; } }
+    padding-right: 5vh;
+    padding-bottom: 5vh; } }
 
 @media only screen and (min-width: 576px) {
   .contact__title--responsive {
